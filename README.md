@@ -5,7 +5,11 @@ I watched Joe Scotto's YouTube video on KiCad and figured I would try to replica
 I also wanted to use the XIAO BLE because I just ordered some.
 I feel like it came out pretty well for a first attempt. I hope to have some more knowledgeable people take a look and tell me how I can do better.
 
-![image](https://github.com/user-attachments/assets/d6e74ed9-0fa9-46b5-91cf-9a5845513098)
-![image](https://github.com/user-attachments/assets/790afb2a-dbe9-4573-8fe4-834346ebee3d)
-![image](https://github.com/user-attachments/assets/f545ad9d-3772-4148-8aba-4a7708f30e36)
-![image](https://github.com/user-attachments/assets/ac1e9641-3f9d-4c0d-bf20-d79dad944fe2)
+Now updated on day 2...learned that a)the battery connects underneath the XIAO, which my design did not allow for, and b)the footprints from Seeed's librery are junk and don't even have those pins. So I got a better footprint from https://github.com/ebastler/marbastlib and added that, a JST connector for the battery, a power switch and a reset button. 
+
+All of that is in the sweepish_v2 directory. Have a look!
+
+![image](https://github.com/user-attachments/assets/a0f0c393-c236-41c6-97ad-f522d339f42f)
+![image](https://github.com/user-attachments/assets/c1b394f5-3028-4172-b1dd-eb291bbb5c16)
+![image](https://github.com/user-attachments/assets/2f4e2257-cb6d-4be3-af4b-78a596ad2211)
+![image](https://github.com/user-attachments/assets/a36c12a6-6cb5-4566-912a-c3847cd12e30)
