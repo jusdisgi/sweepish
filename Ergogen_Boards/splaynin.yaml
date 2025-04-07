@@ -1,0 +1,156 @@
+units:
+  # Proxy Spacing Variables
+  kx: cx
+  ky: cy
+  # Padding Variables
+  px: kx + 2
+  py: ky + 2
+  $default_height: 17
+  $default_width: 18
+points:
+  zones:
+    hand:
+      anchor.shift: [100,-100]
+      key:
+        padding: 1ky
+        spread: 1kx
+      columns:
+        pinky:
+          key.column_net: P14
+        ring:
+          key:
+            stagger: 12
+            splay: -6
+            spread: cx+2
+            column_net: P16
+        middle:
+          key:
+            stagger: 7
+            splay: -3
+            spread: cx+1
+            column_net: P10
+        index:
+          key:
+            stagger: -4
+            splay: -2
+            spread: cx+0.8
+            column_net: P8
+        inner:
+          key:
+            stagger: -2
+            splay: -1
+            spread: cx+0.6
+            column_net: P9
+      rows:
+        bottom:
+          row_net: P18
+        home:
+          row_net: P19
+        top:
+          row_net: P20
+    thumb:
+      key:
+        padding: 1ky
+        spread: 1kx
+      anchor:
+        ref: hand_inner_bottom
+        shift: [-3,-20]
+      columns:
+        left:
+          key:
+            splay: -15
+            column_net: P8
+        right:
+          key:
+            splay: -15
+            shift: [3,-2]
+            column_net: P9
+      rows:
+        onerow:
+          row_net: P15
+outlines:
+  raw:
+    - what: rectangle
+      where: true
+      size: [px, py]
+  keys:
+    - what: rectangle
+      where: true
+      size: [kx-0.5,ky-0.5]
+  board:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: thumb_right_onerow
+          shift: [0.6px,-0.6py]
+        - ref: thumb_left_onerow
+          shift: [-0.5px,-0.5py]
+        - ref: hand_pinky_bottom
+          shift: [-0.6px,-0.6py]
+        - ref: hand_pinky_top
+          shift: [-0.6px,0.5py]
+        - ref: hand_ring_top
+          shift: [-0.5px,0.5py]
+        - ref: hand_middle_top
+          shift: [-0.5px,0.5py]
+        - ref: hand_middle_top
+          shift: [0.5px,0.5py]
+        - ref: hand_index_top
+          shift: [1.5px,0.5py]
+        - ref: hand_index_top
+          shift: [2.6px,0.5py]
+        - ref: thumb_right_onerow
+          shift: [0.6px,0.6py]
+      fillet: 8
+  combo:
+    - name: board
+    - operation: subtract
+      name: keys
+pcbs:
+  splaynin:
+    outlines:
+      main:
+        outline: board
+    footprints:
+      choc_hotswap:
+        what: choc
+        where: true
+        params:
+          keycaps: true
+          reverse: false
+          hotswap: true
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+      diode:
+        what: diode
+        where: true
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -5]
+      promicro:
+          what: promicro
+          params:
+            orientation: "down"
+          where:
+            ref: hand_inner_top
+            shift: [21,-10]
+            rotate: -90
+      reset:
+        what: button
+        params:
+          from: GND
+          to: RST
+        where:
+          ref: hand_index_bottom
+          shift: [0, -12]
+      power:
+        what: slider
+        params:
+          from: GND
+          to: RAW
+        where:
+          ref: hand_middle_bottom
+          shift: [0,-12]
+          rotate: 180
