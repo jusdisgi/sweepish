@@ -122,11 +122,12 @@ pcbs:
           from: "{{column_net}}"
           to: "{{colrow}}"
       diode:
-        what: diode
+        what: ceoloide/diode_tht_sod123
         where: true
         params:
           from: "{{colrow}}"
           to: "{{row_net}}"
+          side: B
         adjust:
           shift: [0, -5]
       promicro:
