@@ -22,32 +22,46 @@ units:
   $default_width: 16
 points:
   zones:
-    main:
+    hand:
       anchor.shift: [100,-200]
+      key:
+        padding: 1pgy
+        spread: 1pgx
       columns:
-        firstcol:
+        pinky:
           key:
             column_net: D5
-      rows:
-        firstrow:
+        ring:
           key:
+            column_net: D4
+        middle:
+          key:
+            column_net: D3
+        index:
+          key:
+            column_net: D2
+        inner:
+          key:
+            column_net: D1
+      rows:
+        home:
             row_net: D8
 # Alias for left corner of board
 # value: start
 # $params: [start]
-# $args: ["main_firstcol_firstrow"]
+# $args: ["hand_firstcol_firstrow"]
 outlines:
   board:
     - what: polygon
       operation: stack
       points:
-        - ref: main_firstcol_firstrow
+        - ref: hand_pinky_home
           shift: [0,0]
-        - ref: main_firstcol_firstrow
+        - ref: hand_pinky_home
           shift: [0,100]
-        - ref: main_firstcol_firstrow
+        - ref: hand_pinky_home
           shift: [100,100]
-        - ref: main_firstcol_firstrow
+        - ref: hand_pinky_home
           shift: [100,0]
 pcbs:
   utility_board:
@@ -57,32 +71,43 @@ pcbs:
     footprints:
       pg1316s:
         what: switch_pg1316s
-        where: main_firstcol_firstrow
+        where: true
         params:
           from: "{{column_net}}"
           to: "{{colrow}}"
         adjust:
             shift: [10,10]
-      # diode:
-      #   what: diode_smd_mmbd4148plm
-      #   where: /^hand_middle/
-      #   params:
-      #     from1: "index_{{row}}"
-      #     from2: "{{colrow}}"
-      #     from3: "ring_{{row}}"
-      #     from4: "inner_{{row}}"
-      #     from5: "pinky_{{row}}"
-      #     to: "{{row_net}}"
-      #     side: F
-      #   adjust:
-      #     shift: [0, 2.5]
-      #     rotate: 180
-      # xiao:
-      #     what: mcu_xiao_smd
-      #     where:
-      #       ref: hand_inner_top
-      #       shift: [22,-3]
-      #       rotate: 0
+      diode:
+        what: diode_smd_mmbd4148plm
+        where: /^hand_middle/
+        params:
+          from1: "index_{{row}}"
+          from2: "{{colrow}}"
+          from3: "ring_{{row}}"
+          from4: "inner_{{row}}"
+          from5: "pinky_{{row}}"
+          to: "{{row_net}}"
+          side: F
+        adjust:
+          shift: [10, 12.5]
+          rotate: 180
+      xiao_slot:
+        what: util_xiao_plus_cutout
+        where:
+          ref: hand_pinky_home
+          shift: [10.6,35]
+          rotate: 90
+        params:
+          side: F
+      xiao:
+        what: mcu_xiao_plus_smd
+        where:
+          ref: hand_pinky_home
+          shift: [12,70]
+          rotate: 0
+        params:
+          side: B
+
       # power:
       #   what: slider
       #   params:

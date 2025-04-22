@@ -7,7 +7,7 @@ module.exports = {
     from3: { type: 'net', value: undefined },
     from4: { type: 'net', value: undefined },
     from5: { type: 'net', value: undefined },
-    to: { type: 'net', value: undefined }
+    to: undefined
   },
   body: p => {
     const fp = [];

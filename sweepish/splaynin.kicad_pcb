@@ -132,6 +132,33 @@
 (net 37 "P5")
 (net 38 "P6")
 (net 39 "P7")
+(net 40 "P101")
+(net 41 "P102")
+(net 42 "P107")
+(net 43 "MCU1_24")
+(net 44 "MCU1_1")
+(net 45 "MCU1_23")
+(net 46 "MCU1_2")
+(net 47 "MCU1_22")
+(net 48 "MCU1_3")
+(net 49 "MCU1_21")
+(net 50 "MCU1_4")
+(net 51 "MCU1_20")
+(net 52 "MCU1_5")
+(net 53 "MCU1_19")
+(net 54 "MCU1_6")
+(net 55 "MCU1_18")
+(net 56 "MCU1_7")
+(net 57 "MCU1_17")
+(net 58 "MCU1_8")
+(net 59 "MCU1_16")
+(net 60 "MCU1_9")
+(net 61 "MCU1_15")
+(net 62 "MCU1_10")
+(net 63 "MCU1_14")
+(net 64 "MCU1_11")
+(net 65 "MCU1_13")
+(net 66 "MCU1_12")
 
   (net_class Default "This is the default net class."
     (clearance 0.2)
@@ -180,6 +207,33 @@
 (add_net "P5")
 (add_net "P6")
 (add_net "P7")
+(add_net "P101")
+(add_net "P102")
+(add_net "P107")
+(add_net "MCU1_24")
+(add_net "MCU1_1")
+(add_net "MCU1_23")
+(add_net "MCU1_2")
+(add_net "MCU1_22")
+(add_net "MCU1_3")
+(add_net "MCU1_21")
+(add_net "MCU1_4")
+(add_net "MCU1_20")
+(add_net "MCU1_5")
+(add_net "MCU1_19")
+(add_net "MCU1_6")
+(add_net "MCU1_18")
+(add_net "MCU1_7")
+(add_net "MCU1_17")
+(add_net "MCU1_8")
+(add_net "MCU1_16")
+(add_net "MCU1_9")
+(add_net "MCU1_15")
+(add_net "MCU1_10")
+(add_net "MCU1_14")
+(add_net "MCU1_11")
+(add_net "MCU1_13")
+(add_net "MCU1_12")
   )
 
   
@@ -914,750 +968,603 @@
         )
         
 
-  
-    (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
-
-
+    (footprint "ceoloide:diode_tht_sod123"
+        (layer "B.Cu")
         (at 100 105 0)
-
+        (property "Reference" "D1"
+            (at 0 0 0)
+            (layer "B.SilkS")
+            hide
+            (effects (font (size 1 1) (thickness 0.15)))
+        )
         
-        (fp_text reference "D1" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
         
+      (pad "1" smd rect (at -1.65 0 0) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 23 "P18"))
+      (pad "2" smd rect (at 1.65 0 0) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "pinky_bottom"))
         
-        (fp_line (start 0.25 0) (end 0.75 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-    
-        
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 23 "P18"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 2 "pinky_bottom"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 23 "P18"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 2 "pinky_bottom"))
-        
-        
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 23 "P18"))
-        (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 2 "pinky_bottom"))
     )
-  
-    
+        
 
-  
-    (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
-
-
+    (footprint "ceoloide:diode_tht_sod123"
+        (layer "B.Cu")
         (at 100 88 0)
-
+        (property "Reference" "D2"
+            (at 0 0 0)
+            (layer "B.SilkS")
+            hide
+            (effects (font (size 1 1) (thickness 0.15)))
+        )
         
-        (fp_text reference "D2" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
         
+      (pad "1" smd rect (at -1.65 0 0) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 24 "P19"))
+      (pad "2" smd rect (at 1.65 0 0) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 3 "pinky_home"))
         
-        (fp_line (start 0.25 0) (end 0.75 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-    
-        
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 24 "P19"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 3 "pinky_home"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 24 "P19"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 3 "pinky_home"))
-        
-        
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 24 "P19"))
-        (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 3 "pinky_home"))
     )
-  
-    
+        
 
-  
-    (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
-
-
+    (footprint "ceoloide:diode_tht_sod123"
+        (layer "B.Cu")
         (at 100 71 0)
-
+        (property "Reference" "D3"
+            (at 0 0 0)
+            (layer "B.SilkS")
+            hide
+            (effects (font (size 1 1) (thickness 0.15)))
+        )
         
-        (fp_text reference "D3" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
         
+      (pad "1" smd rect (at -1.65 0 0) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 25 "P20"))
+      (pad "2" smd rect (at 1.65 0 0) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 4 "pinky_top"))
         
-        (fp_line (start 0.25 0) (end 0.75 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-    
-        
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 25 "P20"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 4 "pinky_top"))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 25 "P20"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 4 "pinky_top"))
-        
-        
-        (pad 1 thru_hole rect (at -3.81 0 0) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 25 "P20"))
-        (pad 2 thru_hole circle (at 3.81 0 0) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 4 "pinky_top"))
     )
-  
-    
+        
 
-  
-    (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
-
-
+    (footprint "ceoloide:diode_tht_sod123"
+        (layer "B.Cu")
         (at 119.4773577 92.9726095 -6)
-
+        (property "Reference" "D4"
+            (at 0 0 -6)
+            (layer "B.SilkS")
+            hide
+            (effects (font (size 1 1) (thickness 0.15)))
+        )
         
-        (fp_text reference "D4" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
         
+      (pad "1" smd rect (at -1.65 0 -6) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 23 "P18"))
+      (pad "2" smd rect (at 1.65 0 -6) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 6 "ring_bottom"))
         
-        (fp_line (start 0.25 0) (end 0.75 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-    
-        
-        (pad 1 smd rect (at -1.65 0 -6) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 23 "P18"))
-        (pad 2 smd rect (at 1.65 0 -6) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 6 "ring_bottom"))
-        (pad 1 smd rect (at -1.65 0 -6) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 23 "P18"))
-        (pad 2 smd rect (at 1.65 0 -6) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 6 "ring_bottom"))
-        
-        
-        (pad 1 thru_hole rect (at -3.81 0 -6) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 23 "P18"))
-        (pad 2 thru_hole circle (at 3.81 0 -6) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 6 "ring_bottom"))
     )
-  
-    
+        
 
-  
-    (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
-
-
+    (footprint "ceoloide:diode_tht_sod123"
+        (layer "B.Cu")
         (at 121.2543416 76.06573730000001 -6)
-
+        (property "Reference" "D5"
+            (at 0 0 -6)
+            (layer "B.SilkS")
+            hide
+            (effects (font (size 1 1) (thickness 0.15)))
+        )
         
-        (fp_text reference "D5" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
         
+      (pad "1" smd rect (at -1.65 0 -6) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 24 "P19"))
+      (pad "2" smd rect (at 1.65 0 -6) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 7 "ring_home"))
         
-        (fp_line (start 0.25 0) (end 0.75 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-    
-        
-        (pad 1 smd rect (at -1.65 0 -6) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 24 "P19"))
-        (pad 2 smd rect (at 1.65 0 -6) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 7 "ring_home"))
-        (pad 1 smd rect (at -1.65 0 -6) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 24 "P19"))
-        (pad 2 smd rect (at 1.65 0 -6) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 7 "ring_home"))
-        
-        
-        (pad 1 thru_hole rect (at -3.81 0 -6) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 24 "P19"))
-        (pad 2 thru_hole circle (at 3.81 0 -6) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 7 "ring_home"))
     )
-  
-    
+        
 
-  
-    (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
-
-
+    (footprint "ceoloide:diode_tht_sod123"
+        (layer "B.Cu")
         (at 123.03132550000001 59.15886510000001 -6)
-
+        (property "Reference" "D6"
+            (at 0 0 -6)
+            (layer "B.SilkS")
+            hide
+            (effects (font (size 1 1) (thickness 0.15)))
+        )
         
-        (fp_text reference "D6" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
         
+      (pad "1" smd rect (at -1.65 0 -6) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 25 "P20"))
+      (pad "2" smd rect (at 1.65 0 -6) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 8 "ring_top"))
         
-        (fp_line (start 0.25 0) (end 0.75 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-    
-        
-        (pad 1 smd rect (at -1.65 0 -6) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 25 "P20"))
-        (pad 2 smd rect (at 1.65 0 -6) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 8 "ring_top"))
-        (pad 1 smd rect (at -1.65 0 -6) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 25 "P20"))
-        (pad 2 smd rect (at 1.65 0 -6) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 8 "ring_top"))
-        
-        
-        (pad 1 thru_hole rect (at -3.81 0 -6) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 25 "P20"))
-        (pad 2 thru_hole circle (at 3.81 0 -6) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 8 "ring_top"))
     )
-  
-    
+        
 
-  
-    (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
-
-
+    (footprint "ceoloide:diode_tht_sod123"
+        (layer "B.Cu")
         (at 138.845443 87.9628292 -9)
-
+        (property "Reference" "D7"
+            (at 0 0 -9)
+            (layer "B.SilkS")
+            hide
+            (effects (font (size 1 1) (thickness 0.15)))
+        )
         
-        (fp_text reference "D7" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
         
+      (pad "1" smd rect (at -1.65 0 -9) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 23 "P18"))
+      (pad "2" smd rect (at 1.65 0 -9) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 10 "middle_bottom"))
         
-        (fp_line (start 0.25 0) (end 0.75 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-    
-        
-        (pad 1 smd rect (at -1.65 0 -9) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 23 "P18"))
-        (pad 2 smd rect (at 1.65 0 -9) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 10 "middle_bottom"))
-        (pad 1 smd rect (at -1.65 0 -9) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 23 "P18"))
-        (pad 2 smd rect (at 1.65 0 -9) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 10 "middle_bottom"))
-        
-        
-        (pad 1 thru_hole rect (at -3.81 0 -9) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 23 "P18"))
-        (pad 2 thru_hole circle (at 3.81 0 -9) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 10 "middle_bottom"))
     )
-  
-    
+        
 
-  
-    (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
-
-
+    (footprint "ceoloide:diode_tht_sod123"
+        (layer "B.Cu")
         (at 141.50482889999998 71.1721274 -9)
-
+        (property "Reference" "D8"
+            (at 0 0 -9)
+            (layer "B.SilkS")
+            hide
+            (effects (font (size 1 1) (thickness 0.15)))
+        )
         
-        (fp_text reference "D8" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
         
+      (pad "1" smd rect (at -1.65 0 -9) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 24 "P19"))
+      (pad "2" smd rect (at 1.65 0 -9) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 11 "middle_home"))
         
-        (fp_line (start 0.25 0) (end 0.75 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-    
-        
-        (pad 1 smd rect (at -1.65 0 -9) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 24 "P19"))
-        (pad 2 smd rect (at 1.65 0 -9) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 11 "middle_home"))
-        (pad 1 smd rect (at -1.65 0 -9) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 24 "P19"))
-        (pad 2 smd rect (at 1.65 0 -9) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 11 "middle_home"))
-        
-        
-        (pad 1 thru_hole rect (at -3.81 0 -9) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 24 "P19"))
-        (pad 2 thru_hole circle (at 3.81 0 -9) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 11 "middle_home"))
     )
-  
-    
+        
 
-  
-    (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
-
-
+    (footprint "ceoloide:diode_tht_sod123"
+        (layer "B.Cu")
         (at 144.16421479999997 54.38142559999999 -9)
-
+        (property "Reference" "D9"
+            (at 0 0 -9)
+            (layer "B.SilkS")
+            hide
+            (effects (font (size 1 1) (thickness 0.15)))
+        )
         
-        (fp_text reference "D9" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
         
+      (pad "1" smd rect (at -1.65 0 -9) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 25 "P20"))
+      (pad "2" smd rect (at 1.65 0 -9) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 12 "middle_top"))
         
-        (fp_line (start 0.25 0) (end 0.75 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-    
-        
-        (pad 1 smd rect (at -1.65 0 -9) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 25 "P20"))
-        (pad 2 smd rect (at 1.65 0 -9) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 12 "middle_top"))
-        (pad 1 smd rect (at -1.65 0 -9) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 25 "P20"))
-        (pad 2 smd rect (at 1.65 0 -9) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 12 "middle_top"))
-        
-        
-        (pad 1 thru_hole rect (at -3.81 0 -9) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 25 "P20"))
-        (pad 2 thru_hole circle (at 3.81 0 -9) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 12 "middle_top"))
     )
-  
-    
+        
 
-  
-    (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
-
-
+    (footprint "ceoloide:diode_tht_sod123"
+        (layer "B.Cu")
         (at 156.6163732 94.82424470000001 -11)
-
+        (property "Reference" "D10"
+            (at 0 0 -11)
+            (layer "B.SilkS")
+            hide
+            (effects (font (size 1 1) (thickness 0.15)))
+        )
         
-        (fp_text reference "D10" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
         
+      (pad "1" smd rect (at -1.65 0 -11) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 23 "P18"))
+      (pad "2" smd rect (at 1.65 0 -11) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 14 "index_bottom"))
         
-        (fp_line (start 0.25 0) (end 0.75 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-    
-        
-        (pad 1 smd rect (at -1.65 0 -11) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 23 "P18"))
-        (pad 2 smd rect (at 1.65 0 -11) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 14 "index_bottom"))
-        (pad 1 smd rect (at -1.65 0 -11) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 23 "P18"))
-        (pad 2 smd rect (at 1.65 0 -11) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 14 "index_bottom"))
-        
-        
-        (pad 1 thru_hole rect (at -3.81 0 -11) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 23 "P18"))
-        (pad 2 thru_hole circle (at 3.81 0 -11) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 14 "index_bottom"))
     )
-  
-    
+        
 
-  
-    (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
-
-
+    (footprint "ceoloide:diode_tht_sod123"
+        (layer "B.Cu")
         (at 159.8601261 78.13658260000001 -11)
-
+        (property "Reference" "D11"
+            (at 0 0 -11)
+            (layer "B.SilkS")
+            hide
+            (effects (font (size 1 1) (thickness 0.15)))
+        )
         
-        (fp_text reference "D11" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
         
+      (pad "1" smd rect (at -1.65 0 -11) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 24 "P19"))
+      (pad "2" smd rect (at 1.65 0 -11) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 15 "index_home"))
         
-        (fp_line (start 0.25 0) (end 0.75 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-    
-        
-        (pad 1 smd rect (at -1.65 0 -11) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 24 "P19"))
-        (pad 2 smd rect (at 1.65 0 -11) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 15 "index_home"))
-        (pad 1 smd rect (at -1.65 0 -11) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 24 "P19"))
-        (pad 2 smd rect (at 1.65 0 -11) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 15 "index_home"))
-        
-        
-        (pad 1 thru_hole rect (at -3.81 0 -11) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 24 "P19"))
-        (pad 2 thru_hole circle (at 3.81 0 -11) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 15 "index_home"))
     )
-  
-    
+        
 
-  
-    (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
-
-
+    (footprint "ceoloide:diode_tht_sod123"
+        (layer "B.Cu")
         (at 163.103879 61.44892050000001 -11)
-
+        (property "Reference" "D12"
+            (at 0 0 -11)
+            (layer "B.SilkS")
+            hide
+            (effects (font (size 1 1) (thickness 0.15)))
+        )
         
-        (fp_text reference "D12" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
         
+      (pad "1" smd rect (at -1.65 0 -11) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 25 "P20"))
+      (pad "2" smd rect (at 1.65 0 -11) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 16 "index_top"))
         
-        (fp_line (start 0.25 0) (end 0.75 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-    
-        
-        (pad 1 smd rect (at -1.65 0 -11) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 25 "P20"))
-        (pad 2 smd rect (at 1.65 0 -11) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 16 "index_top"))
-        (pad 1 smd rect (at -1.65 0 -11) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 25 "P20"))
-        (pad 2 smd rect (at 1.65 0 -11) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 16 "index_top"))
-        
-        
-        (pad 1 thru_hole rect (at -3.81 0 -11) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 25 "P20"))
-        (pad 2 thru_hole circle (at 3.81 0 -11) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 16 "index_top"))
     )
-  
-    
+        
 
-  
-    (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
-
-
+    (footprint "ceoloide:diode_tht_sod123"
+        (layer "B.Cu")
         (at 174.40750730000002 100.3191484 -12)
-
+        (property "Reference" "D13"
+            (at 0 0 -12)
+            (layer "B.SilkS")
+            hide
+            (effects (font (size 1 1) (thickness 0.15)))
+        )
         
-        (fp_text reference "D13" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
         
+      (pad "1" smd rect (at -1.65 0 -12) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 23 "P18"))
+      (pad "2" smd rect (at 1.65 0 -12) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 18 "inner_bottom"))
         
-        (fp_line (start 0.25 0) (end 0.75 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-    
-        
-        (pad 1 smd rect (at -1.65 0 -12) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 23 "P18"))
-        (pad 2 smd rect (at 1.65 0 -12) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 18 "inner_bottom"))
-        (pad 1 smd rect (at -1.65 0 -12) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 23 "P18"))
-        (pad 2 smd rect (at 1.65 0 -12) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 18 "inner_bottom"))
-        
-        
-        (pad 1 thru_hole rect (at -3.81 0 -12) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 23 "P18"))
-        (pad 2 thru_hole circle (at 3.81 0 -12) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 18 "inner_bottom"))
     )
-  
-    
+        
 
-  
-    (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
-
-
+    (footprint "ceoloide:diode_tht_sod123"
+        (layer "B.Cu")
         (at 177.94200600000002 83.6906392 -12)
-
+        (property "Reference" "D14"
+            (at 0 0 -12)
+            (layer "B.SilkS")
+            hide
+            (effects (font (size 1 1) (thickness 0.15)))
+        )
         
-        (fp_text reference "D14" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
         
+      (pad "1" smd rect (at -1.65 0 -12) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 24 "P19"))
+      (pad "2" smd rect (at 1.65 0 -12) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 19 "inner_home"))
         
-        (fp_line (start 0.25 0) (end 0.75 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-    
-        
-        (pad 1 smd rect (at -1.65 0 -12) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 24 "P19"))
-        (pad 2 smd rect (at 1.65 0 -12) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 19 "inner_home"))
-        (pad 1 smd rect (at -1.65 0 -12) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 24 "P19"))
-        (pad 2 smd rect (at 1.65 0 -12) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 19 "inner_home"))
-        
-        
-        (pad 1 thru_hole rect (at -3.81 0 -12) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 24 "P19"))
-        (pad 2 thru_hole circle (at 3.81 0 -12) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 19 "inner_home"))
     )
-  
-    
+        
 
-  
-    (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
-
-
+    (footprint "ceoloide:diode_tht_sod123"
+        (layer "B.Cu")
         (at 181.47650470000002 67.06213000000001 -12)
-
+        (property "Reference" "D15"
+            (at 0 0 -12)
+            (layer "B.SilkS")
+            hide
+            (effects (font (size 1 1) (thickness 0.15)))
+        )
         
-        (fp_text reference "D15" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
         
+      (pad "1" smd rect (at -1.65 0 -12) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 25 "P20"))
+      (pad "2" smd rect (at 1.65 0 -12) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 20 "inner_top"))
         
-        (fp_line (start 0.25 0) (end 0.75 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-    
-        
-        (pad 1 smd rect (at -1.65 0 -12) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 25 "P20"))
-        (pad 2 smd rect (at 1.65 0 -12) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 20 "inner_top"))
-        (pad 1 smd rect (at -1.65 0 -12) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 25 "P20"))
-        (pad 2 smd rect (at 1.65 0 -12) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 20 "inner_top"))
-        
-        
-        (pad 1 thru_hole rect (at -3.81 0 -12) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 25 "P20"))
-        (pad 2 thru_hole circle (at 3.81 0 -12) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 20 "inner_top"))
     )
-  
-    
+        
 
-  
-    (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
-
-
+    (footprint "ceoloide:diode_tht_sod123"
+        (layer "B.Cu")
         (at 166.08443670000003 118.8226599 -27)
-
+        (property "Reference" "D16"
+            (at 0 0 -27)
+            (layer "B.SilkS")
+            hide
+            (effects (font (size 1 1) (thickness 0.15)))
+        )
         
-        (fp_text reference "D16" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
         
+      (pad "1" smd rect (at -1.65 0 -27) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 26 "P15"))
+      (pad "2" smd rect (at 1.65 0 -27) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 21 "left_onerow"))
         
-        (fp_line (start 0.25 0) (end 0.75 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-    
-        
-        (pad 1 smd rect (at -1.65 0 -27) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 26 "P15"))
-        (pad 2 smd rect (at 1.65 0 -27) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 21 "left_onerow"))
-        (pad 1 smd rect (at -1.65 0 -27) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 26 "P15"))
-        (pad 2 smd rect (at 1.65 0 -27) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 21 "left_onerow"))
-        
-        
-        (pad 1 thru_hole rect (at -3.81 0 -27) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 26 "P15"))
-        (pad 2 thru_hole circle (at 3.81 0 -27) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 21 "left_onerow"))
     )
-  
-    
+        
 
-  
-    (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
-
-
+    (footprint "ceoloide:diode_tht_sod123"
+        (layer "B.Cu")
         (at 181.9380269 129.7488619 -42)
-
+        (property "Reference" "D17"
+            (at 0 0 -42)
+            (layer "B.SilkS")
+            hide
+            (effects (font (size 1 1) (thickness 0.15)))
+        )
         
-        (fp_text reference "D17" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
         
+      (pad "1" smd rect (at -1.65 0 -42) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 26 "P15"))
+      (pad "2" smd rect (at 1.65 0 -42) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 22 "right_onerow"))
         
-        (fp_line (start 0.25 0) (end 0.75 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer F.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer F.SilkS) (width 0.1))
-        (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 0.4) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end 0.25 -0.4) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
-        (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-    
-        
-        (pad 1 smd rect (at -1.65 0 -42) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 26 "P15"))
-        (pad 2 smd rect (at 1.65 0 -42) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 22 "right_onerow"))
-        (pad 1 smd rect (at -1.65 0 -42) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 26 "P15"))
-        (pad 2 smd rect (at 1.65 0 -42) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 22 "right_onerow"))
-        
-        
-        (pad 1 thru_hole rect (at -3.81 0 -42) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 26 "P15"))
-        (pad 2 thru_hole circle (at 3.81 0 -42) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 22 "right_onerow"))
     )
+        
+
+    
+    
+  (footprint "ceoloide:mcu_nice_nano"
+    (layer "F.Cu")
+    (at 200.9780459 76.31901350000001 -12)
+    (property "Reference" "MCU1"
+      (at 0 -15 -12)
+      (layer "F.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (attr exclude_from_pos_files exclude_from_bom)
+
+    
+    (fp_line (start 3.556 -18.034) (end 3.556 -16.51) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
+    (fp_line (start -3.81 -16.51) (end -3.81 -18.034) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
+    (fp_line (start -3.81 -18.034) (end 3.556 -18.034) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
+
+
+  
+    (fp_line (start -8.89 -16.51) (end 8.89 -16.51) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
+    (fp_line (start -8.89 -16.51) (end -8.89 16.57) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
+    (fp_line (start 8.89 -16.51) (end 8.89 16.57) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
+    (fp_line (start -8.89 16.57) (end 8.89 16.57) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
+    
+    
+    
+    (pad "24" thru_hole circle (at -7.62 -12.7 -12) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 32 "P1"))
+    (pad "1" thru_hole circle (at 7.62 -12.7 -12) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 27 "RAW"))
+      
+    (fp_text user "P1" (at -4.47 -12.7 -12) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+            
+    (fp_text user "RAW" (at 4.47 -12.7 -12) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+            
+    
+    (pad "23" thru_hole circle (at -7.62 -10.16 -12) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 33 "P0"))
+    (pad "2" thru_hole circle (at 7.62 -10.16 -12) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 28 "GND"))
+      
+    (fp_text user "P0" (at -4.47 -10.16 -12) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+            
+    (fp_text user "GND" (at 4.47 -10.16 -12) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+            
+    
+    (pad "22" thru_hole circle (at -7.62 -7.619999999999999 -12) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 28 "GND"))
+    (pad "3" thru_hole circle (at 7.62 -7.619999999999999 -12) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 29 "RST"))
+      
+    (fp_text user "GND" (at -4.47 -7.619999999999999 -12) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+            
+    (fp_text user "RST" (at 4.47 -7.619999999999999 -12) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+            
+    
+    (pad "21" thru_hole circle (at -7.62 -5.079999999999999 -12) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 28 "GND"))
+    (pad "4" thru_hole circle (at 7.62 -5.079999999999999 -12) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 30 "VCC"))
+      
+    (fp_text user "GND" (at -4.47 -5.079999999999999 -12) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+            
+    (fp_text user "VCC" (at 4.47 -5.079999999999999 -12) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+            
+    
+    (pad "20" thru_hole circle (at -7.62 -2.539999999999999 -12) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 34 "P2"))
+    (pad "5" thru_hole circle (at 7.62 -2.539999999999999 -12) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 31 "P21"))
+      
+    (fp_text user "P2" (at -4.47 -2.539999999999999 -12) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+            
+    (fp_text user "P21" (at 4.47 -2.539999999999999 -12) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+            
+    
+    (pad "19" thru_hole circle (at -7.62 0 -12) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 35 "P3"))
+    (pad "6" thru_hole circle (at 7.62 0 -12) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 25 "P20"))
+      
+    (fp_text user "P3" (at -4.47 0 -12) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+            
+    (fp_text user "P20" (at 4.47 0 -12) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+            
+    
+    (pad "18" thru_hole circle (at -7.62 2.540000000000001 -12) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 36 "P4"))
+    (pad "7" thru_hole circle (at 7.62 2.540000000000001 -12) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 24 "P19"))
+      
+    (fp_text user "P4" (at -4.47 2.540000000000001 -12) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+            
+    (fp_text user "P19" (at 4.47 2.540000000000001 -12) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+            
+    
+    (pad "17" thru_hole circle (at -7.62 5.080000000000002 -12) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 37 "P5"))
+    (pad "8" thru_hole circle (at 7.62 5.080000000000002 -12) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 23 "P18"))
+      
+    (fp_text user "P5" (at -4.47 5.080000000000002 -12) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+            
+    (fp_text user "P18" (at 4.47 5.080000000000002 -12) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+            
+    
+    (pad "16" thru_hole circle (at -7.62 7.620000000000001 -12) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 38 "P6"))
+    (pad "9" thru_hole circle (at 7.62 7.620000000000001 -12) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 26 "P15"))
+      
+    (fp_text user "P6" (at -4.47 7.620000000000001 -12) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+            
+    (fp_text user "P15" (at 4.47 7.620000000000001 -12) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+            
+    
+    (pad "15" thru_hole circle (at -7.62 10.16 -12) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 39 "P7"))
+    (pad "10" thru_hole circle (at 7.62 10.16 -12) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 1 "P14"))
+      
+    (fp_text user "P7" (at -4.47 10.16 -12) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+            
+    (fp_text user "P14" (at 4.47 10.16 -12) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+            
+    
+    (pad "14" thru_hole circle (at -7.62 12.7 -12) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 13 "P8"))
+    (pad "11" thru_hole circle (at 7.62 12.7 -12) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 5 "P16"))
+      
+    (fp_text user "P8" (at -4.47 12.7 -12) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+            
+    (fp_text user "P16" (at 4.47 12.7 -12) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+            
+    
+    (pad "13" thru_hole circle (at -7.62 15.240000000000002 -12) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 17 "P9"))
+    (pad "12" thru_hole circle (at 7.62 15.240000000000002 -12) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 9 "P10"))
+      
+    (fp_text user "P9" (at -4.47 15.240000000000002 -12) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+            
+    (fp_text user "P10" (at 4.47 15.240000000000002 -12) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+            
+    (fp_line (start 6.29 -14.03) (end 8.95 -14.03) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
+    (fp_line (start 6.29 -14.03) (end 6.29 16.57) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
+    (fp_line (start 6.29 16.57) (end 8.95 16.57) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
+    (fp_line (start -6.29 -14.03) (end -6.29 16.57) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
+    (fp_line (start 8.95 -14.03) (end 8.95 16.57) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
+    (fp_line (start -8.95 -14.03) (end -6.29 -14.03) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
+    (fp_line (start -8.95 -14.03) (end -8.95 16.57) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
+    (fp_line (start -8.95 16.57) (end -6.29 16.57) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
+    (fp_line (start -6.29 -11.43) (end -8.95 -11.43) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
+            
+    
+    
+    
+    
+  )
+
+  
   
     
-
-        
-      (module ProMicro (layer F.Cu) (tedit 5B307E4C)
-      (at 200.9780459 76.31901350000001 -102)
-
-      
-      (fp_text reference "MCU1" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-    
-      
-      (fp_line (start -19.304 -3.81) (end -14.224 -3.81) (layer Dwgs.User) (width 0.15))
-      (fp_line (start -19.304 3.81) (end -19.304 -3.81) (layer Dwgs.User) (width 0.15))
-      (fp_line (start -14.224 3.81) (end -19.304 3.81) (layer Dwgs.User) (width 0.15))
-      (fp_line (start -14.224 -3.81) (end -14.224 3.81) (layer Dwgs.User) (width 0.15))
-    
-      
-      (fp_line (start -17.78 8.89) (end 15.24 8.89) (layer F.SilkS) (width 0.15))
-      (fp_line (start 15.24 8.89) (end 15.24 -8.89) (layer F.SilkS) (width 0.15))
-      (fp_line (start 15.24 -8.89) (end -17.78 -8.89) (layer F.SilkS) (width 0.15))
-      (fp_line (start -17.78 -8.89) (end -17.78 8.89) (layer F.SilkS) (width 0.15))
-      
-        
-        
-        (fp_line (start -15.24 6.35) (end -12.7 6.35) (layer F.SilkS) (width 0.15))
-        (fp_line (start -15.24 6.35) (end -15.24 8.89) (layer F.SilkS) (width 0.15))
-        (fp_line (start -12.7 6.35) (end -12.7 8.89) (layer F.SilkS) (width 0.15))
-      
-        
-        (fp_text user RAW (at -13.97 4.8 -12) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user GND (at -11.43 4.8 -12) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user RST (at -8.89 4.8 -12) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user VCC (at -6.35 4.8 -12) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user P21 (at -3.81 4.8 -12) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user P20 (at -1.27 4.8 -12) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user P19 (at 1.27 4.8 -12) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user P18 (at 3.81 4.8 -12) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user P15 (at 6.35 4.8 -12) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user P14 (at 8.89 4.8 -12) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user P16 (at 11.43 4.8 -12) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user P10 (at 13.97 4.8 -12) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-      
-        (fp_text user P01 (at -13.97 -4.8 -12) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user P00 (at -11.43 -4.8 -12) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user GND (at -8.89 -4.8 -12) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user GND (at -6.35 -4.8 -12) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user P02 (at -3.81 -4.8 -12) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user P03 (at -1.27 -4.8 -12) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user P04 (at 1.27 -4.8 -12) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user P05 (at 3.81 -4.8 -12) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user P06 (at 6.35 -4.8 -12) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user P07 (at 8.89 -4.8 -12) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user P08 (at 11.43 -4.8 -12) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user P09 (at 13.97 -4.8 -12) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-      
-        
-        (pad 1 thru_hole rect (at -13.97 7.62 -102) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 27 "RAW"))
-        (pad 2 thru_hole circle (at -11.43 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 28 "GND"))
-        (pad 3 thru_hole circle (at -8.89 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 29 "RST"))
-        (pad 4 thru_hole circle (at -6.35 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 30 "VCC"))
-        (pad 5 thru_hole circle (at -3.81 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 31 "P21"))
-        (pad 6 thru_hole circle (at -1.27 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 25 "P20"))
-        (pad 7 thru_hole circle (at 1.27 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 24 "P19"))
-        (pad 8 thru_hole circle (at 3.81 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 23 "P18"))
-        (pad 9 thru_hole circle (at 6.35 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 26 "P15"))
-        (pad 10 thru_hole circle (at 8.89 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 1 "P14"))
-        (pad 11 thru_hole circle (at 11.43 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 5 "P16"))
-        (pad 12 thru_hole circle (at 13.97 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 9 "P10"))
-        
-        (pad 13 thru_hole circle (at -13.97 -7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 32 "P1"))
-        (pad 14 thru_hole circle (at -11.43 -7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 33 "P0"))
-        (pad 15 thru_hole circle (at -8.89 -7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 28 "GND"))
-        (pad 16 thru_hole circle (at -6.35 -7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 28 "GND"))
-        (pad 17 thru_hole circle (at -3.81 -7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 34 "P2"))
-        (pad 18 thru_hole circle (at -1.27 -7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 35 "P3"))
-        (pad 19 thru_hole circle (at 1.27 -7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 36 "P4"))
-        (pad 20 thru_hole circle (at 3.81 -7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 37 "P5"))
-        (pad 21 thru_hole circle (at 6.35 -7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 38 "P6"))
-        (pad 22 thru_hole circle (at 8.89 -7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 39 "P7"))
-        (pad 23 thru_hole circle (at 11.43 -7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 13 "P8"))
-        (pad 24 thru_hole circle (at 13.97 -7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 17 "P9"))
-      )
-        
 
     
     (module E73:SW_TACT_ALPS_SKQGABE010 (layer F.Cu) (tstamp 5BF2CC94)

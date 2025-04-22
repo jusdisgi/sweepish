@@ -231,7 +231,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "unisweep.kicad_pro",
+    "filename": "splaynin_fancy.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -355,74 +355,6 @@
       },
       {
         "netclass": "Default",
-        "pattern": "mirror_pinky_bottom"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "mirror_pinky_home"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "mirror_pinky_top"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "mirror_ring_bottom"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "mirror_ring_home"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "mirror_ring_top"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "mirror_middle_bottom"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "mirror_middle_home"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "mirror_middle_top"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "mirror_index_bottom"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "mirror_index_home"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "mirror_index_top"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "mirror_inner_bottom"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "mirror_inner_home"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "mirror_inner_top"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "mirror_left_onerow"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "mirror_right_onerow"
-      },
-      {
-        "netclass": "Default",
         "pattern": "P18"
       },
       {
@@ -436,22 +368,6 @@
       {
         "netclass": "Default",
         "pattern": "P15"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P6"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P5"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P4"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P7"
       },
       {
         "netclass": "Default",
@@ -488,6 +404,130 @@
       {
         "netclass": "Default",
         "pattern": "P3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P6"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P7"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P101"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P102"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P107"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MCU1_24"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MCU1_1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MCU1_23"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MCU1_2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MCU1_22"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MCU1_3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MCU1_21"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MCU1_4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MCU1_20"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MCU1_5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MCU1_19"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MCU1_6"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MCU1_18"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MCU1_7"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MCU1_17"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MCU1_8"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MCU1_16"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MCU1_9"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MCU1_15"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MCU1_10"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MCU1_14"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MCU1_11"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MCU1_13"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MCU1_12"
       }
     ]
   },
