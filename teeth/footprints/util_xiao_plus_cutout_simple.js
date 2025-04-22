@@ -96,7 +96,6 @@ fp.push(`(fp_arc (start -7.084999 8.7625) (end -7.085 10.6675) (angle 89.9999) (
 //fp.push(`(fp_arc (start 6.984999 8.6625) (end 8.89 8.6625) (angle 90) (stroke (width 0.05) (type solid)) (layer "F.SilkS"))`);
 fp.push(`(fp_arc (start 7.084999 8.7625) (end 8.99 8.7625) (angle 90) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts"))`);
 
-fp.push(`(fp_arc (start -8.99 -7.6165) (end -8.99 -7.8665) (angle 180) (stroke (width 0.05) (type solid)) (layer "F.SilkS"))`);
 
 fp.push(`(generator "pcbnew")`);
 fp.push(`(generator_version "9.0")`);

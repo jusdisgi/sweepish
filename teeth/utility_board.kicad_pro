@@ -267,7 +267,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "D5"
+        "pattern": "P0.02"
       },
       {
         "netclass": "Default",
@@ -275,7 +275,11 @@
       },
       {
         "netclass": "Default",
-        "pattern": "D4"
+        "pattern": "pinky_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P0.15"
       },
       {
         "netclass": "Default",
@@ -283,7 +287,11 @@
       },
       {
         "netclass": "Default",
-        "pattern": "D3"
+        "pattern": "ring_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P1.13"
       },
       {
         "netclass": "Default",
@@ -291,7 +299,11 @@
       },
       {
         "netclass": "Default",
-        "pattern": "D2"
+        "pattern": "middle_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P1.05"
       },
       {
         "netclass": "Default",
@@ -299,7 +311,11 @@
       },
       {
         "netclass": "Default",
-        "pattern": "D1"
+        "pattern": "index_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P1.14"
       },
       {
         "netclass": "Default",
@@ -307,15 +323,15 @@
       },
       {
         "netclass": "Default",
-        "pattern": "D8"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P0.02"
+        "pattern": "inner_top"
       },
       {
         "netclass": "Default",
         "pattern": "P0.03"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P1.03"
       },
       {
         "netclass": "Default",
@@ -343,14 +359,6 @@
       },
       {
         "netclass": "Default",
-        "pattern": "P1.13"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P1.14"
-      },
-      {
-        "netclass": "Default",
         "pattern": "P1.15"
       },
       {
@@ -364,10 +372,6 @@
       {
         "netclass": "Default",
         "pattern": "5V"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P0.15"
       },
       {
         "netclass": "Default",
@@ -388,14 +392,6 @@
       {
         "netclass": "Default",
         "pattern": "P0.31"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P1.03"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P1.05"
       },
       {
         "netclass": "Default",

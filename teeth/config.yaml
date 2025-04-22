@@ -30,22 +30,24 @@ points:
       columns:
         pinky:
           key:
-            column_net: D5
+            column_net: P0.02
         ring:
           key:
-            column_net: D4
+            column_net: P0.15
         middle:
           key:
-            column_net: D3
+            column_net: P1.13
         index:
           key:
-            column_net: D2
+            column_net: P1.05
         inner:
           key:
-            column_net: D1
+            column_net: P1.14
       rows:
         home:
-            row_net: D8
+          row_net: P0.03
+        top:
+          row_net: P1.03
 # Alias for left corner of board
 # value: start
 # $params: [start]
@@ -95,18 +97,28 @@ pcbs:
         what: util_xiao_plus_cutout
         where:
           ref: hand_pinky_home
-          shift: [10.6,35]
+          shift: [10.6,50]
           rotate: 90
         params:
           side: F
-      xiao:
-        what: mcu_xiao_plus_smd
+      xiao_slot_simple:
+        what: util_xiao_plus_cutout_simple
         where:
           ref: hand_pinky_home
-          shift: [12,70]
-          rotate: 0
+          shift: [10.6,75]
+          rotate: 90
         params:
-          side: B
+          side: F
+
+
+      # xiao:
+      #   what: mcu_xiao_plus_smd
+      #   where:
+      #     ref: hand_pinky_home
+      #     shift: [10.6,35]
+      #     rotate: 90
+      #   params:
+      #     side: F
 
       # power:
       #   what: slider
