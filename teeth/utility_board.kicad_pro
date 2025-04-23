@@ -412,6 +412,118 @@
       {
         "netclass": "Default",
         "pattern": "BAT+"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D0_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D1_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D2_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D3_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D4_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D5_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D6_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D7_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D8_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D9_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D10_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "3V3_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "GND_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "5V_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D11_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D12_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D13_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D14_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D15_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D16_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D17_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D18_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D19_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D20_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D21_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D22_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D23_a"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "BAT_a"
       }
     ]
   },

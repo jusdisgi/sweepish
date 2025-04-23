@@ -93,22 +93,86 @@ pcbs:
         adjust:
           shift: [10, 12.5]
           rotate: 180
-      xiao_slot:
-        what: util_xiao_plus_cutout
+      xiao_slot_bde:
+        what: util_xiao_ble_plus_cutout
         where:
           ref: hand_pinky_home
           shift: [10.6,50]
           rotate: 90
         params:
           side: F
-      xiao_slot_simple:
-        what: util_xiao_plus_cutout_simple
+      xiao_slot_a:
+        what: util_xiao_ble_plus_cutout_simple
         where:
           ref: hand_pinky_home
-          shift: [10.6,75]
+          shift: [10.6,83]
           rotate: 90
         params:
           side: F
+          P1: D0_a
+          P2: D1_a
+          P3: D2_a
+          P4: D3_a
+          P5: D4_a
+          P6: D5_a
+          P7: D6_a
+          P8: D7_a
+          P9: D8_a
+          P10: D9_a
+          P11: D10_a
+          P12: 3V3_a
+          P13: GND_a
+          P14: 5V_a
+          P15: D11_a
+          P16: D12_a
+          P17: D13_a
+          P18: D14_a
+          P19: D15_a
+          P20: D16_a
+          P21: D17_a
+          P22: D18_a
+          P23: D19_a
+          P24: D20_a
+          P25: D21_a
+          P26: D22_a
+          P27: D23_a
+          P28: BAT_a
+      xiao_breakout_a:
+        what: xiao_ble_plus_breakout_holes
+        where:
+          ref: hand_pinky_home
+          shift: [10.6,83]
+          rotate: 0
+        params:
+          orientation: up
+          P1: D0_a
+          P2: D1_a
+          P3: D2_a
+          P4: D3_a
+          P5: D4_a
+          P6: D5_a
+          P7: D6_a
+          P8: D7_a
+          P9: D8_a
+          P10: D9_a
+          P11: D10_a
+          P12: 3V3_a
+          P13: GND_a
+          P14: 5V_a
+          P15: D11_a
+          P16: D12_a
+          P17: D13_a
+          P18: D14_a
+          P19: D15_a
+          P20: D16_a
+          P21: D17_a
+          P22: D18_a
+          P23: D19_a
+          P24: D20_a
+          P25: D21_a
+          P26: D22_a
+          P27: D23_a
+          P28: BAT_a
 
 
       # xiao:
