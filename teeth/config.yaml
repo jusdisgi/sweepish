@@ -60,17 +60,248 @@ outlines:
         - ref: hand_pinky_home
           shift: [0,0]
         - ref: hand_pinky_home
+          shift: [0,65.5]
+        - ref: hand_pinky_home
+          shift: [34.5,65.5]
+        - ref: hand_pinky_home
+          shift: [34.5,40]
+        - ref: hand_pinky_home
+          shift: [35,40]
+        - ref: hand_pinky_home
+          shift: [35,66]
+        - ref: hand_pinky_home
+          shift: [0,66]
+        - ref: hand_pinky_home
           shift: [0,100]
         - ref: hand_pinky_home
           shift: [100,100]
         - ref: hand_pinky_home
+          shift: [100,30.25]
+        - ref: hand_pinky_home
+          shift: [85,30.25]
+        - ref: hand_pinky_home
+          shift: [85,27.5]
+        - ref: hand_pinky_home
+          shift: [85.5,27.5]
+        - ref: hand_pinky_home
+          shift: [85.5,29.75]
+        - ref: hand_pinky_home
+          shift: [100,29.75]
+        - ref: hand_pinky_home
+          shift: [100,20.25]
+        - ref: hand_pinky_home
+          shift: [85.5,20.25]
+        - ref: hand_pinky_home
+          shift: [85.5,22.5]
+        - ref: hand_pinky_home
+          shift: [85,22.5]
+        - ref: hand_pinky_home
+          shift: [85,17.5]
+        - ref: hand_pinky_home
+          shift: [85.5,17.5]
+        - ref: hand_pinky_home
+          shift: [85.5,19.75]
+        - ref: hand_pinky_home
+          shift: [100,19.75]
+        - ref: hand_pinky_home
+          shift: [100,10.25]
+        - ref: hand_pinky_home
+          shift: [85.5,10.25]
+        - ref: hand_pinky_home
+          shift: [85.5,12.5]
+        - ref: hand_pinky_home
+          shift: [85,12.5]
+        - ref: hand_pinky_home
+          shift: [85,7.5]
+        - ref: hand_pinky_home
+          shift: [85.5,7.5]
+        - ref: hand_pinky_home
+          shift: [85.5,9.75]
+        - ref: hand_pinky_home
+          shift: [100,9.75]
+        - ref: hand_pinky_home
           shift: [100,0]
+        - ref: hand_pinky_home
+          shift: [85.5,0]
+        - ref: hand_pinky_home
+          shift: [85.5,2.5]
+        - ref: hand_pinky_home
+          shift: [85,2.5]
+        - ref: hand_pinky_home
+          shift: [85,0]
+  slot_1:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: hand_pinky_home
+          shift: [34.5,95.1]
+        - ref: hand_pinky_home
+          shift: [34.5,70.9]
+        - ref: hand_pinky_home
+          shift: [35,70.9]
+        - ref: hand_pinky_home
+          shift: [35,95.1]
+  slot_2:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: hand_pinky_home
+          shift: [69.5,95.1]
+        - ref: hand_pinky_home
+          shift: [69.5,70.9]
+        - ref: hand_pinky_home
+          shift: [70,70.9]
+        - ref: hand_pinky_home
+          shift: [70,95.1]
 pcbs:
   utility_board:
     outlines:
       main:
         outline: board
+      slot_1:
+        outline: slot_1
+      slot_2:
+        outline: slot_2
     footprints:
+      bites_1:
+        what: mousebites_25mm
+        where:
+          ref: hand_pinky_home
+          shift: [34.8,97.6]
+      bites_2:
+        what: mousebites_25mm
+        where:
+          ref: hand_pinky_home
+          shift: [34.8,68.4]
+      bites_3:
+        what: mousebites_25mm
+        where:
+          ref: hand_pinky_home
+          shift: [37.4,40]
+          rotate: 90
+      bites_4:
+        what: mousebites_25mm
+        where:
+          ref: hand_pinky_home
+          shift: [69.9,97.6]
+          rotate: 0
+      bites_5:
+        what: mousebites_25mm
+        where:
+          ref: hand_pinky_home
+          shift: [69.9,68.4]
+          rotate: 0
+      bites_6:
+        what: mousebites_25mm
+        where:
+          ref: hand_pinky_home
+          shift: [37.5,65.9]
+          rotate: 90
+      bites_7:
+        what: mousebites_25mm
+        where:
+          ref: hand_pinky_home
+          shift: [37.5,65.9]
+          rotate: 90
+      bites_8:
+        what: mousebites_25mm
+        where:
+          ref: hand_pinky_home
+          shift: [85.3,25]
+          rotate: 0
+      bites_9:
+        what: mousebites_25mm
+        where:
+          ref: hand_pinky_home
+          shift: [85.3,15]
+          rotate: 0
+      bites_10:
+        what: mousebites_25mm
+        where:
+          ref: hand_pinky_home
+          shift: [85.3,5]
+          rotate: 0
+      5diode_1:
+        what: diode_smd_mmbd4148plm
+        where: hand_pinky_home
+        params:
+          from1: "1A1"
+          from2: "1A2"
+          from3: "1A3"
+          from4: "1A4"
+          from5: "1A5"
+          to: "1C1"
+          side: F
+        adjust:
+          shift: [93, 5]
+          rotate: 90
+      5diode_breakout_1:
+        what: 5diode_breakout_holes
+        where: hand_pinky_home
+        adjust:
+          shift: [93, 5]
+          rotate: 90
+        params:
+          P1: "1A1"
+          P2: "1A2"
+          P3: "1A3"
+          P4: "1A4"
+          P5: "1A5"
+          P6: "1C1"   
+      5diode_2:
+        what: diode_smd_mmbd4148plm
+        where: hand_pinky_home
+        params:
+          from1: "2A1"
+          from2: "2A2"
+          from3: "2A3"
+          from4: "2A4"
+          from5: "2A5"
+          to: "2C1"
+          side: F
+        adjust:
+          shift: [93, 15]
+          rotate: 90
+      5diode_breakout_2:
+        what: 5diode_breakout_holes
+        where: hand_pinky_home
+        adjust:
+          shift: [93, 15]
+          rotate: 90
+        params:
+          P1: "2A1"
+          P2: "2A2"
+          P3: "2A3"
+          P4: "2A4"
+          P5: "2A5"
+          P6: "2C1"
+      5diode_3:
+        what: diode_smd_mmbd4148plm
+        where: hand_pinky_home
+        params:
+          from1: "3A1"
+          from2: "3A2"
+          from3: "3A3"
+          from4: "3A4"
+          from5: "3A5"
+          to: "3C1"
+          side: F
+        adjust:
+          shift: [93, 25]
+          rotate: 90
+      5diode_breakout_3:
+        what: 5diode_breakout_holes
+        where: hand_pinky_home
+        adjust:
+          shift: [93, 25]
+          rotate: 90
+        params:
+          P1: "3A1"
+          P2: "3A2"
+          P3: "3A3"
+          P4: "3A4"
+          P5: "3A5"
+          P6: "3C1"
       pg1316s:
         what: switch_pg1316s
         where: true
@@ -79,7 +310,7 @@ pcbs:
           to: "{{colrow}}"
         adjust:
             shift: [10,10]
-      diode:
+      diode_pg:
         what: diode_smd_mmbd4148plm
         where: /^hand_middle/
         params:
@@ -101,7 +332,8 @@ pcbs:
           rotate: 90
         params:
           side: F
-      xiao_slot_a:
+
+      xiao_plus_slot_a:
         what: util_xiao_ble_plus_cutout_simple
         where:
           ref: hand_pinky_home
@@ -137,7 +369,7 @@ pcbs:
           P26: D22_a
           P27: D23_a
           P28: BAT_a
-      xiao_breakout_a:
+      xiao_plus_breakout_a:
         what: xiao_ble_plus_breakout_holes
         where:
           ref: hand_pinky_home
@@ -173,6 +405,128 @@ pcbs:
           P26: D22_a
           P27: D23_a
           P28: BAT_a
+          
+      xiao_slot_b:
+        what: util_xiao_ble_cutout_simple
+        where: 
+          ref: hand_pinky_home
+          shift: [89.4,83]
+          rotate: -90
+        params:
+          side: F
+          P1: D0_b
+          P2: D1_b
+          P3: D2_b
+          P4: D3_b
+          P5: D4_b
+          P6: D5_b
+          P7: D6_b
+          P8: D7_b
+          P9: D8_b
+          P10: D9_b
+          P11: D10_b
+          P12: 3V3_b
+          P13: GND_b
+          P14: 5V_b
+          P15: D11_b
+          P16: D12_b
+          P17: D13_b
+          P18: D14_b
+          P19: D15_b
+          P20: D16_b
+          P21: D17_b
+          P22: D18_b
+      xiao_breakout_b:
+        what: xiao_ble_breakout_holes
+        where:
+          ref: hand_pinky_home
+          shift: [89.4,83]
+          rotate: 180
+        params:
+          orientation: up
+          P1: D0_b
+          P2: D1_b
+          P3: D2_b
+          P4: D3_b
+          P5: D4_b
+          P6: D5_b
+          P7: D6_b
+          P8: D7_b
+          P9: D8_b
+          P10: D9_b
+          P11: D10_b
+          P12: 3V3_b
+          P13: GND_b
+          P14: 5V_b
+          P15: D11_b
+          P16: D12_b
+          P17: D13_b
+          P18: D14_b
+          P19: D15_b
+          P20: D16_b
+          P21: D17_b
+          P22: D18_b
+          
+      xiao_slot_c:
+        what: util_xiao_ble_cutout
+        where: 
+          ref: hand_pinky_home
+          shift: [52,89.3]
+          rotate: 0
+        params:
+          side: F
+          P1: D0_c
+          P2: D1_c
+          P3: D2_c
+          P4: D3_c
+          P5: D4_c
+          P6: D5_c
+          P7: D6_c
+          P8: D7_c
+          P9: D8_c
+          P10: D9_c
+          P11: D10_c
+          P12: 3V3_c
+          P13: GND_c
+          P14: 5V_c
+          P15: D11_c
+          P16: D12_c
+          P17: D13_c
+          P18: D14_c
+          P19: D15_c
+          P20: D16_c
+          P21: D17_c
+          P22: D18_c
+      xiao_breakout_c:
+        what: xiao_ble_breakout_holes
+        where:
+          ref: hand_pinky_home
+          shift: [52,89.3]
+          rotate: -90
+        params:
+          orientation: up
+          P1: D0_c
+          P2: D1_c
+          P3: D2_c
+          P4: D3_c
+          P5: D4_c
+          P6: D5_c
+          P7: D6_c
+          P8: D7_c
+          P9: D8_c
+          P10: D9_c
+          P11: D10_c
+          P12: 3V3_c
+          P13: GND_c
+          P14: 5V_c
+          P15: D11_c
+          P16: D12_c
+          P17: D13_c
+          P18: D14_c
+          P19: D15_c
+          P20: D16_c
+          P21: D17_c
+          P22: D18_c
 
 
       # xiao:

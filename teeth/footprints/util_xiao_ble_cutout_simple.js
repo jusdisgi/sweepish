@@ -2,34 +2,28 @@ module.exports = {
   params: {
     designator: 'J',
     side: 'F',
-    P1: { type: 'net', value: 'P0.02' },
-    P2: { type: 'net', value: 'P0.03' },
-    P3: { type: 'net', value: 'P0.28' },
-    P4: { type: 'net', value: 'P0.29' },
-    P5: { type: 'net', value: 'P0.04' },
-    P6: { type: 'net', value: 'P0.05' },
-    P7: { type: 'net', value: 'P1.11' },
-    P8: { type: 'net', value: 'P1.12' },
-    P9: { type: 'net', value: 'P1.13' },
-    P10: { type: 'net', value: 'P1.14' },
-    P11: { type: 'net', value: 'P1.15' },
+    P1: { type: 'net', value: 'D0' },
+    P2: { type: 'net', value: 'D1' },
+    P3: { type: 'net', value: 'D2' },
+    P4: { type: 'net', value: 'D3' },
+    P5: { type: 'net', value: 'D4' },
+    P6: { type: 'net', value: 'D5' },
+    P7: { type: 'net', value: 'D6' },
+    P8: { type: 'net', value: 'D7' },
+    P9: { type: 'net', value: 'D8' },
+    P10: { type: 'net', value: 'D9' },
+    P11: { type: 'net', value: 'D11' },
     P12: { type: 'net', value: '3V3' },
     P13: { type: 'net', value: 'GND' },
     P14: { type: 'net', value: '5V' },
-    P15: { type: 'net', value: 'P0.15' },
-    P16: { type: 'net', value: 'P0.19' },
-    P17: { type: 'net', value: 'P1.01' },
-    P18: { type: 'net', value: 'P0.09' },
-    P19: { type: 'net', value: 'P0.10' },
-    P20: { type: 'net', value: 'P0.31' },
-    P21: { type: 'net', value: 'P1.03' },
-    P22: { type: 'net', value: 'P1.05' },
-    P23: { type: 'net', value: 'P1.07' },
-    P24: { type: 'net', value: 'DIO' },
-    P25: { type: 'net', value: 'CLK' },
-    P26: { type: 'net', value: 'RST' },
-    P27: { type: 'net', value: 'GND' },
-    P28: { type: 'net', value: 'BAT+' },
+    P15: { type: 'net', value: 'CLK' },
+    P16: { type: 'net', value: 'DIO' },
+    P17: { type: 'net', value: 'RST' },
+    P18: { type: 'net', value: 'GND' },
+    P19: { type: 'net', value: 'BAT' },
+    P20: { type: 'net', value: 'GND' },
+    P21: { type: 'net', value: 'NFC1' },
+    P22: { type: 'net', value: 'NFC2' },
   },
   body: p => {
     const fp = [];
@@ -45,8 +39,6 @@ fp.push(`(property "Reference" "${p.ref}" ${p.ref_hide} (at 0 0 ${p.r}) (layer "
 
 
 // Pads
-//
-//fp.push(`(pad "1" smd roundrect (at ${(flip ? 6.223 : -10.287)} -7.6165 ${p.r + 180}) (size 2.032 0.95) (layers "${(flip ? "B" : "F")}.Cu" "${(flip ? "B" : "F")}.Mask" "${(flip ? "B" : "F")}.Paste") (roundrect_rratio 0.1) (thermal_bridge_angle 45) ${p.P1})`);
 fp.push(`(pad "1" smd roundrect (at ${(flip ? 9.8 : -9.8)} -7.6165 ${p.r + 180}) (size 2.032 0.75) (layers "${(flip ? "B" : "F")}.Cu" "${(flip ? "B" : "F")}.Mask" "${(flip ? "B" : "F")}.Paste") (roundrect_rratio 0.1) (chamfer_ratio 0.5) (chamfer top_left bottom_left) (thermal_bridge_angle 45) ${p.P1})`);
 fp.push(`(pad "101" smd roundrect (at ${(flip ? 8.8 : -8.8)} -7.6165 ${p.r + 180}) (size 1 0.5) (layers "F.Paste") (roundrect_rratio 0.5))`);
 
@@ -88,34 +80,6 @@ fp.push(`(pad "113" smd roundrect (at ${(flip ? -8.8 : 8.8)} -5.0765 ${p.r + 180
 
 fp.push(`(pad "14" smd roundrect (at ${(flip ? -9.8 : 9.8)} -7.6165 ${p.r}) (size 2.032 0.75) (layers "${(flip ? "B" : "F")}.Cu" "${(flip ? "B" : "F")}.Mask" "${(flip ? "B" : "F")}.Paste") (roundrect_rratio 0.1) (chamfer_ratio 0.5) (chamfer top_left bottom_left) (thermal_bridge_angle 45) ${p.P14})`);
 fp.push(`(pad "114" smd roundrect (at ${(flip ? -8.8 : 8.8)} -7.6165 ${p.r + 180}) (size 1 0.5) (layers "F.Paste") (roundrect_rratio 0.5))`);
-
-fp.push(`(pad "15" smd roundrect (at ${(flip ? 9.4 : -9.4)} -6.3465 ${p.r + 180}) (size 1.232 0.75) (layers "${(flip ? "B" : "F")}.Cu" "${(flip ? "B" : "F")}.Mask" "${(flip ? "B" : "F")}.Paste") (roundrect_rratio 0.1) (chamfer_ratio 0.5) (chamfer top_left bottom_left) (thermal_bridge_angle 45) ${p.P15})`);
-fp.push(`(pad "115" smd roundrect (at ${(flip ? 8.8 : -8.8)} -6.3565 ${p.r + 180}) (size 1 0.5) (layers "F.Paste") (roundrect_rratio 0.5))`);
-
-fp.push(`(pad "16" smd roundrect (at ${(flip ? 9.4 : -9.4)} -3.8065 ${p.r + 180}) (size 1.232 0.75) (layers "${(flip ? "B" : "F")}.Cu" "${(flip ? "B" : "F")}.Mask" "${(flip ? "B" : "F")}.Paste") (roundrect_rratio 0.1) (chamfer_ratio 0.5) (chamfer top_left bottom_left) (thermal_bridge_angle 45) ${p.P16})`);
-fp.push(`(pad "116" smd roundrect (at ${(flip ? 8.8 : -8.8)} -3.8065 ${p.r + 180}) (size 1 0.5) (layers "F.Paste") (roundrect_rratio 0.5))`);
-
-fp.push(`(pad "17" smd roundrect (at ${(flip ? 9.4 : -9.4)} -1.2665 ${p.r + 180}) (size 1.232 0.75) (layers "${(flip ? "B" : "F")}.Cu" "${(flip ? "B" : "F")}.Mask" "${(flip ? "B" : "F")}.Paste") (roundrect_rratio 0.1) (chamfer_ratio 0.5) (chamfer top_left bottom_left) (thermal_bridge_angle 45) ${p.P17})`);
-fp.push(`(pad "117" smd roundrect (at ${(flip ? 8.8 : -8.8)} -1.2665 ${p.r + 180}) (size 1 0.5) (layers "F.Paste") (roundrect_rratio 0.5))`);
-
-fp.push(`(pad "18" smd roundrect (at ${(flip ? 9.4 : -9.4)} 1.2735 ${p.r + 180}) (size 1.232 0.75) (layers "${(flip ? "B" : "F")}.Cu" "${(flip ? "B" : "F")}.Mask" "${(flip ? "B" : "F")}.Paste") (roundrect_rratio 0.1) (chamfer_ratio 0.5) (chamfer top_left bottom_left) (thermal_bridge_angle 45) ${p.P18})`);
-fp.push(`(pad "118" smd roundrect (at ${(flip ? 8.8 : -8.8)} 1.2735 ${p.r + 180}) (size 1 0.5) (layers "F.Paste") (roundrect_rratio 0.5))`);
-
-fp.push(`(pad "19" smd roundrect (at ${(flip ? 9.4 : -9.4)} 3.8135 ${p.r + 180}) (size 1.232 0.75) (layers "${(flip ? "B" : "F")}.Cu" "${(flip ? "B" : "F")}.Mask" "${(flip ? "B" : "F")}.Paste") (roundrect_rratio 0.1) (chamfer_ratio 0.5) (chamfer top_left bottom_left) (thermal_bridge_angle 45) ${p.P19})`);
-fp.push(`(pad "119" smd roundrect (at ${(flip ? 8.8 : -8.8)} 3.8135 ${p.r + 180}) (size 1 0.5) (layers "F.Paste") (roundrect_rratio 0.5))`);
-
-fp.push(`(pad "20" smd roundrect (at ${(flip ? 9.4 : -9.4)} 6.3535 ${p.r + 180}) (size 1.232 0.75) (layers "${(flip ? "B" : "F")}.Cu" "${(flip ? "B" : "F")}.Mask" "${(flip ? "B" : "F")}.Paste") (roundrect_rratio 0.1) (chamfer_ratio 0.5) (chamfer top_left bottom_left) (thermal_bridge_angle 45) ${p.P20})`);
-fp.push(`(pad "120" smd roundrect (at ${(flip ? 8.8 : -8.8)} 6.3535 ${p.r + 180}) (size 1 0.5) (layers "F.Paste") (roundrect_rratio 0.5))`);
-
-fp.push(`(pad "121" smd roundrect (at ${(flip ? -8.8 : 8.8)} 6.3535 ${p.r + 180}) (size 1 0.5) (layers "F.Paste") (roundrect_rratio 0.5))`);
-fp.push(`(pad "21" smd roundrect (at ${(flip ? -9.4 : 9.4)} 6.3535 ${p.r}) (size 1.232 0.75) (layers "${(flip ? "B" : "F")}.Cu" "${(flip ? "B" : "F")}.Mask" "${(flip ? "B" : "F")}.Paste") (roundrect_rratio 0.1) (chamfer_ratio 0.5) (chamfer top_left bottom_left) (thermal_bridge_angle 45) ${p.P21})`);
-
-fp.push(`(pad "122" smd roundrect (at ${(flip ? -8.8 : 8.8)} 3.8135 ${p.r + 180}) (size 1 0.5) (layers "F.Paste") (roundrect_rratio 0.5))`);
-fp.push(`(pad "22" smd roundrect (at ${(flip ? -9.4 : 9.4)} 3.8135 ${p.r}) (size 1.232 0.75) (layers "${(flip ? "B" : "F")}.Cu" "${(flip ? "B" : "F")}.Mask" "${(flip ? "B" : "F")}.Paste") (roundrect_rratio 0.1) (chamfer_ratio 0.5) (chamfer top_left bottom_left) (thermal_bridge_angle 45) ${p.P22})`);
-
-fp.push(`(pad "23" smd roundrect (at ${(flip ? -9.4 : 9.4)} 1.2735 ${p.r}) (size 1.232 0.75) (layers "${(flip ? "B" : "F")}.Cu" "${(flip ? "B" : "F")}.Mask" "${(flip ? "B" : "F")}.Paste") (roundrect_rratio 0.1) (chamfer_ratio 0.5) (chamfer top_left bottom_left) (thermal_bridge_angle 45) ${p.P23})`);
-fp.push(`(pad "123" smd roundrect (at ${(flip ? -8.8 : 8.8)} 1.2735 ${p.r + 180}) (size 1 0.5) (layers "F.Paste") (roundrect_rratio 0.5))`);
-
 
 
 

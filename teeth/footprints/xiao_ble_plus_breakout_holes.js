@@ -35,29 +35,10 @@ module.exports = {
     P25: { type: 'net', value: 'CLK' },
     P26: { type: 'net', value: 'RST' },
     P27: { type: 'net', value: 'GND' },
-    P28: { type: 'net', value: 'BAT+' }
-    // RAW: {type: 'net', value: 'RAW'},
-    // GND: {type: 'net', value: 'GND'},
-    // RST: {type: 'net', value: 'RST'},
-    // VCC: {type: 'net', value: 'VCC'},
-    // P21: {type: 'net', value: 'P21'},
-    // P20: {type: 'net', value: 'P20'},
-    // P19: {type: 'net', value: 'P19'},
-    // P18: {type: 'net', value: 'P18'},
-    // P15: {type: 'net', value: 'P15'},
-    // P14: {type: 'net', value: 'P14'},
-    // P16: {type: 'net', value: 'P16'},
-    // P10: {type: 'net', value: 'P10'},
-    // P1: {type: 'net', value: 'P1'},
-    // P0: {type: 'net', value: 'P0'},
-    // P2: {type: 'net', value: 'P2'},
-    // P3: {type: 'net', value: 'P3'},
-    // P4: {type: 'net', value: 'P4'},
-    // P5: {type: 'net', value: 'P5'},
-    // P6: {type: 'net', value: 'P6'},
-    // P7: {type: 'net', value: 'P7'},
-    // P8: {type: 'net', value: 'P8'},
-    // P9: {type: 'net', value: 'P9'}
+    P28: { type: 'net', value: 'BAT+' },
+    P29: { type: 'net', value: 'BAT-' },
+    P30: { type: 'net', value: 'NFC1' },
+    P31: { type: 'net', value: 'NFC2' }
   },
   body: p => {
     const standard = `
@@ -72,32 +53,39 @@ module.exports = {
       return `
         
         ${''/* pin names */}
-        (fp_text user 5V (at -8.97 ${def_pos}12.8 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user GND (at -6.43 ${def_pos}12.8 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user 3V3 (at -3.89 ${def_pos}12.8 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user D10 (at -1.35 ${def_pos}12.8 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user D20 (at 1.19 ${def_pos}12.8 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user D9 (at 3.83 ${def_pos}12.8 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user D19 (at 6.27 ${def_pos}12.8 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user D8 (at 8.81 ${def_pos}12.8 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user D18 (at 11.35 ${def_pos}12.8 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user D7 (at 13.89 ${def_pos}12.8 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
+        (fp_text user 5V (at -8.97 ${def_pos}12.5 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user GND (at -6.43 ${def_pos}12.5 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user 3V3 (at -3.89 ${def_pos}12.5 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user D10 (at -1.35 ${def_pos}12.5 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user D20 (at 1.19 ${def_pos}12.5 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user D9 (at 3.83 ${def_pos}12.5 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user D19 (at 6.27 ${def_pos}12.5 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user D8 (at 8.81 ${def_pos}12.5 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user D18 (at 11.35 ${def_pos}12.5 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user D7 (at 13.89 ${def_pos}12.5 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+              
+        (fp_text user CLK (at 20.2 ${def_neg}-8.75 ${p.r}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user DIO (at 20.1 ${def_neg}-6.25 ${p.r}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user RST (at 20.15 ${def_neg}-3.75 ${p.r}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user GND (at 20.25 ${def_neg}-1.25 ${p.r}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user BAT+ (at 20.5 ${def_neg}1.25 ${p.r}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user BAT- (at 20.5 ${def_neg}3.75 ${p.r}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user NFC1 (at 20.5 ${def_neg}6.25 ${p.r}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user NFC2 (at 20.5 ${def_neg}8.75 ${p.r}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
         
-        (fp_text user BAT (at 18.97 ${def_neg}5.0 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-      
-        (fp_text user D0 (at -8.97 ${def_neg}12.8 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user D11 (at -6.43 ${def_neg}12.8 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user D1 (at -3.89 ${def_neg}12.8 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user D12 (at -1.35 ${def_neg}12.8 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user D2 (at 1.19 ${def_neg}12.8 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user D13 (at 3.83 ${def_neg}12.8 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user D3 (at 6.27 ${def_neg}12.8 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user D14 (at 8.81 ${def_neg}12.8 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user D4 (at 11.35 ${def_neg}12.8 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user D15 (at 13.89 ${def_neg}12.8 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user D5 (at 16.43 ${def_neg}12.8 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user D16 (at 18.97 ${def_neg}12.8 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user D6 (at 21.43 ${def_neg}12.8 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
+        (fp_text user D0 (at -8.97 ${def_neg}12.5 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user D11 (at -6.43 ${def_neg}12.5 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user D1 (at -3.89 ${def_neg}12.5 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user D12 (at -1.35 ${def_neg}12.5 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user D2 (at 1.19 ${def_neg}12.5 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user D13 (at 3.83 ${def_neg}12.5 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user D3 (at 6.27 ${def_neg}12.5 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user D14 (at 8.81 ${def_neg}12.5 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user D4 (at 11.35 ${def_neg}12.5 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user D15 (at 13.89 ${def_neg}12.5 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user D5 (at 16.43 ${def_neg}12.5 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user D16 (at 18.97 ${def_neg}12.5 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
+        (fp_text user D6 (at 21.43 ${def_neg}12.5 ${p.r + 90}) (layer F.SilkS) (effects (font (size 0.6 0.6) (thickness 0.15))))
       
         ${''/* and now the actual pins */}
         (pad 14 thru_hole rect (at -8.97 ${def_pos}14.62 ${p.r}) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P14})
@@ -111,8 +99,15 @@ module.exports = {
         (pad 21 thru_hole circle (at 11.35 ${def_pos}14.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P21})
         (pad 8 thru_hole circle (at 13.89 ${def_pos}14.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P8})
 
-        (pad 28 thru_hole circle (at 16.62 ${def_neg}5.0 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P28})
-        
+        (pad 24 thru_hole circle (at 18 ${def_neg}-8.75 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P24})
+        (pad 25 thru_hole circle (at 18 ${def_neg}-6.25 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P25})
+        (pad 26 thru_hole circle (at 18 ${def_neg}-3.75 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P26})
+        (pad 27 thru_hole circle (at 18 ${def_neg}-1.25 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P27})
+        (pad 28 thru_hole circle (at 18 ${def_neg}1.25 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P28})
+        (pad 29 thru_hole circle (at 18 ${def_neg}3.75 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P29})
+        (pad 30 thru_hole circle (at 18 ${def_neg}6.25 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P30})
+        (pad 31 thru_hole circle (at 18 ${def_neg}8.75 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P31})
+       
         (pad 1 thru_hole circle (at -8.97 ${def_neg}14.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P1})
         (pad 15 thru_hole circle (at -6.43 ${def_neg}14.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P15})
         (pad 2 thru_hole circle (at -3.89 ${def_neg}14.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P2})
