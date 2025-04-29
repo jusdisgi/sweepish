@@ -153,6 +153,42 @@ outlines:
           shift: [70,70.9]
         - ref: hand_pinky_home
           shift: [70,95.1]
+  slot_3:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: hand_pinky_home
+          shift: [39.8,66]
+        - ref: hand_pinky_home
+          shift: [95.2,66]
+        - ref: hand_pinky_home
+          shift: [95.2,65.5]
+        - ref: hand_pinky_home
+          shift: [39.8,65.5]
+  slot_4:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: hand_pinky_home
+          shift: [39.8,40]
+        - ref: hand_pinky_home
+          shift: [65,40]
+        - ref: hand_pinky_home
+          shift: [65,40.5]
+        - ref: hand_pinky_home
+          shift: [39.8,40.5]
+  slot_5:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: hand_pinky_home
+          shift: [69.8,40]
+        - ref: hand_pinky_home
+          shift: [95.2,40]
+        - ref: hand_pinky_home
+          shift: [95.2,40.5]
+        - ref: hand_pinky_home
+          shift: [69.8,40.5]
 pcbs:
   utility_board:
     outlines:
@@ -162,6 +198,12 @@ pcbs:
         outline: slot_1
       slot_2:
         outline: slot_2
+      slot_3:
+        outline: slot_3
+      slot_4:
+        outline: slot_4
+      slot_5:
+        outline: slot_5
     footprints:
       bites_1:
         what: mousebites_25mm
@@ -195,13 +237,13 @@ pcbs:
         what: mousebites_25mm
         where:
           ref: hand_pinky_home
-          shift: [37.5,65.9]
+          shift: [37.4,65.9]
           rotate: 90
       bites_7:
         what: mousebites_25mm
         where:
           ref: hand_pinky_home
-          shift: [37.5,65.9]
+          shift: [97.6,40]
           rotate: 90
       bites_8:
         what: mousebites_25mm
@@ -221,6 +263,18 @@ pcbs:
           ref: hand_pinky_home
           shift: [85.3,5]
           rotate: 0
+      bites_11:
+        what: mousebites_25mm
+        where:
+          ref: hand_pinky_home
+          shift: [67.4,40]
+          rotate: 90
+      bites_12:
+        what: mousebites_25mm
+        where:
+          ref: hand_pinky_home
+          shift: [97.6,65.9]
+          rotate: 90
       5diode_1:
         what: diode_smd_mmbd4148plm
         where: hand_pinky_home
@@ -302,6 +356,26 @@ pcbs:
           P4: "3A4"
           P5: "3A5"
           P6: "3C1"
+      # bav70_tom_4:
+      #   what: diode_bav70_tomzail
+      #   where: hand_pinky_home
+      #   adjust:
+      #     shift: [93,35]
+      #     rotate: 90
+      #   params:
+      #     A1: "4A1"
+      #     A2: "4A2"
+      #     C: "4C1"
+      bav70_hand_5:
+        what: diode_bav70_hand
+        where: hand_pinky_home
+        adjust:
+          shift: [93,35]
+          rotate: 90
+        params:
+          from1: "5A1"
+          from2: "5A2"
+          to: "5C1"
       pg1316s:
         what: switch_pg1316s
         where: true
@@ -332,7 +406,6 @@ pcbs:
           rotate: 90
         params:
           side: F
-
       xiao_plus_slot_a:
         what: util_xiao_ble_plus_cutout_simple
         where:
@@ -405,7 +478,6 @@ pcbs:
           P26: D22_a
           P27: D23_a
           P28: BAT_a
-          
       xiao_slot_b:
         what: util_xiao_ble_cutout_simple
         where: 
@@ -466,7 +538,6 @@ pcbs:
           P20: D16_b
           P21: D17_b
           P22: D18_b
-          
       xiao_slot_c:
         what: util_xiao_ble_cutout
         where: 

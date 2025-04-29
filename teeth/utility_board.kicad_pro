@@ -339,6 +339,18 @@
       },
       {
         "netclass": "Default",
+        "pattern": "5A1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "5A2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "5C1"
+      },
+      {
+        "netclass": "Default",
         "pattern": "P0.02"
       },
       {
