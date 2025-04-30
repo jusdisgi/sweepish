@@ -363,6 +363,30 @@
       },
       {
         "netclass": "Default",
+        "pattern": "6A1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "6A2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "6C1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "7A1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "7A2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "7C1"
+      },
+      {
+        "netclass": "Default",
         "pattern": "P0.02"
       },
       {

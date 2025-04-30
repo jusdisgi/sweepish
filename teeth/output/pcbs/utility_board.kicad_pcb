@@ -1069,486 +1069,186 @@
         (pad 3 thru_hole circle (at 0 4 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 30 "7C1"))
         )
         
-
-
-  (module PG1316S (layer F.Cu) (tedit 67FEEE99)
-
-      (at 110 190 0)
-      (attr smd)
-      
-      (fp_text reference "S1" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-      
-      
-      (fp_line (start -7 -6) (end -7 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -7 7) (end -6 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -6 -7) (end -7 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -7 7) (end -7 6) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 6) (end 7 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 -7) (end 6 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 6 7) (end 7 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 -7) (end 7 -6) (layer F.SilkS) (width 0.15))
-
-       
-      (fp_poly
-        (pts
-          (xy 3.8 -3.5)
-          (xy 3.8 -1.65)
-          (xy 3.3 -1.15)
-          (xy -2.2 -1.15)
-          (xy -2.2 -3.9)
-          (xy 2.2 -3.9)
-          (xy 2.2 -3.5)
-        )
-        (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User")
-      )
-
-      
-      (fp_rect (start -8 -8) (end 8 8)
-        (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none)
-      )
-
-      
-      (pad "1" smd rect (at -2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 32 "pinky_home"))
-      (pad "2" smd rect (at 2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 31 "P0.02"))
-      (pad "MP" smd rect (at -6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at -6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at 6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at 6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-  )
-  
-
-
-  (module PG1316S (layer F.Cu) (tedit 67FEEE99)
-
-      (at 110 174 0)
-      (attr smd)
-      
-      (fp_text reference "S2" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-      
-      
-      (fp_line (start -7 -6) (end -7 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -7 7) (end -6 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -6 -7) (end -7 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -7 7) (end -7 6) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 6) (end 7 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 -7) (end 6 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 6 7) (end 7 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 -7) (end 7 -6) (layer F.SilkS) (width 0.15))
-
-       
-      (fp_poly
-        (pts
-          (xy 3.8 -3.5)
-          (xy 3.8 -1.65)
-          (xy 3.3 -1.15)
-          (xy -2.2 -1.15)
-          (xy -2.2 -3.9)
-          (xy 2.2 -3.9)
-          (xy 2.2 -3.5)
-        )
-        (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User")
-      )
-
-      
-      (fp_rect (start -8 -8) (end 8 8)
-        (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none)
-      )
-
-      
-      (pad "1" smd rect (at -2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 33 "pinky_top"))
-      (pad "2" smd rect (at 2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 31 "P0.02"))
-      (pad "MP" smd rect (at -6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at -6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at 6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at 6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-  )
-  
-
-
-  (module PG1316S (layer F.Cu) (tedit 67FEEE99)
-
-      (at 126 190 0)
-      (attr smd)
-      
-      (fp_text reference "S3" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-      
-      
-      (fp_line (start -7 -6) (end -7 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -7 7) (end -6 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -6 -7) (end -7 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -7 7) (end -7 6) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 6) (end 7 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 -7) (end 6 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 6 7) (end 7 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 -7) (end 7 -6) (layer F.SilkS) (width 0.15))
-
-       
-      (fp_poly
-        (pts
-          (xy 3.8 -3.5)
-          (xy 3.8 -1.65)
-          (xy 3.3 -1.15)
-          (xy -2.2 -1.15)
-          (xy -2.2 -3.9)
-          (xy 2.2 -3.9)
-          (xy 2.2 -3.5)
-        )
-        (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User")
-      )
-
-      
-      (fp_rect (start -8 -8) (end 8 8)
-        (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none)
-      )
-
-      
-      (pad "1" smd rect (at -2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 35 "ring_home"))
-      (pad "2" smd rect (at 2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 34 "P0.15"))
-      (pad "MP" smd rect (at -6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at -6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at 6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at 6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-  )
-  
-
-
-  (module PG1316S (layer F.Cu) (tedit 67FEEE99)
-
-      (at 126 174 0)
-      (attr smd)
-      
-      (fp_text reference "S4" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-      
-      
-      (fp_line (start -7 -6) (end -7 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -7 7) (end -6 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -6 -7) (end -7 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -7 7) (end -7 6) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 6) (end 7 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 -7) (end 6 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 6 7) (end 7 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 -7) (end 7 -6) (layer F.SilkS) (width 0.15))
-
-       
-      (fp_poly
-        (pts
-          (xy 3.8 -3.5)
-          (xy 3.8 -1.65)
-          (xy 3.3 -1.15)
-          (xy -2.2 -1.15)
-          (xy -2.2 -3.9)
-          (xy 2.2 -3.9)
-          (xy 2.2 -3.5)
-        )
-        (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User")
-      )
-
-      
-      (fp_rect (start -8 -8) (end 8 8)
-        (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none)
-      )
-
-      
-      (pad "1" smd rect (at -2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 36 "ring_top"))
-      (pad "2" smd rect (at 2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 34 "P0.15"))
-      (pad "MP" smd rect (at -6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at -6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at 6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at 6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-  )
-  
-
-
-  (module PG1316S (layer F.Cu) (tedit 67FEEE99)
-
-      (at 142 190 0)
-      (attr smd)
-      
-      (fp_text reference "S5" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-      
-      
-      (fp_line (start -7 -6) (end -7 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -7 7) (end -6 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -6 -7) (end -7 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -7 7) (end -7 6) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 6) (end 7 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 -7) (end 6 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 6 7) (end 7 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 -7) (end 7 -6) (layer F.SilkS) (width 0.15))
-
-       
-      (fp_poly
-        (pts
-          (xy 3.8 -3.5)
-          (xy 3.8 -1.65)
-          (xy 3.3 -1.15)
-          (xy -2.2 -1.15)
-          (xy -2.2 -3.9)
-          (xy 2.2 -3.9)
-          (xy 2.2 -3.5)
-        )
-        (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User")
-      )
-
-      
-      (fp_rect (start -8 -8) (end 8 8)
-        (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none)
-      )
-
-      
-      (pad "1" smd rect (at -2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 38 "middle_home"))
-      (pad "2" smd rect (at 2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 37 "P1.13"))
-      (pad "MP" smd rect (at -6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at -6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at 6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at 6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-  )
-  
-
-
-  (module PG1316S (layer F.Cu) (tedit 67FEEE99)
-
-      (at 142 174 0)
-      (attr smd)
-      
-      (fp_text reference "S6" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-      
-      
-      (fp_line (start -7 -6) (end -7 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -7 7) (end -6 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -6 -7) (end -7 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -7 7) (end -7 6) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 6) (end 7 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 -7) (end 6 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 6 7) (end 7 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 -7) (end 7 -6) (layer F.SilkS) (width 0.15))
-
-       
-      (fp_poly
-        (pts
-          (xy 3.8 -3.5)
-          (xy 3.8 -1.65)
-          (xy 3.3 -1.15)
-          (xy -2.2 -1.15)
-          (xy -2.2 -3.9)
-          (xy 2.2 -3.9)
-          (xy 2.2 -3.5)
-        )
-        (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User")
-      )
-
-      
-      (fp_rect (start -8 -8) (end 8 8)
-        (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none)
-      )
-
-      
-      (pad "1" smd rect (at -2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 39 "middle_top"))
-      (pad "2" smd rect (at 2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 37 "P1.13"))
-      (pad "MP" smd rect (at -6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at -6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at 6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at 6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-  )
-  
-
-
-  (module PG1316S (layer F.Cu) (tedit 67FEEE99)
-
-      (at 158 190 0)
-      (attr smd)
-      
-      (fp_text reference "S7" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-      
-      
-      (fp_line (start -7 -6) (end -7 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -7 7) (end -6 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -6 -7) (end -7 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -7 7) (end -7 6) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 6) (end 7 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 -7) (end 6 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 6 7) (end 7 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 -7) (end 7 -6) (layer F.SilkS) (width 0.15))
-
-       
-      (fp_poly
-        (pts
-          (xy 3.8 -3.5)
-          (xy 3.8 -1.65)
-          (xy 3.3 -1.15)
-          (xy -2.2 -1.15)
-          (xy -2.2 -3.9)
-          (xy 2.2 -3.9)
-          (xy 2.2 -3.5)
-        )
-        (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User")
-      )
-
-      
-      (fp_rect (start -8 -8) (end 8 8)
-        (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none)
-      )
-
-      
-      (pad "1" smd rect (at -2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 41 "index_home"))
-      (pad "2" smd rect (at 2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 40 "P1.05"))
-      (pad "MP" smd rect (at -6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at -6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at 6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at 6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-  )
-  
-
-
-  (module PG1316S (layer F.Cu) (tedit 67FEEE99)
-
-      (at 158 174 0)
-      (attr smd)
-      
-      (fp_text reference "S8" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-      
-      
-      (fp_line (start -7 -6) (end -7 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -7 7) (end -6 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -6 -7) (end -7 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -7 7) (end -7 6) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 6) (end 7 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 -7) (end 6 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 6 7) (end 7 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 -7) (end 7 -6) (layer F.SilkS) (width 0.15))
-
-       
-      (fp_poly
-        (pts
-          (xy 3.8 -3.5)
-          (xy 3.8 -1.65)
-          (xy 3.3 -1.15)
-          (xy -2.2 -1.15)
-          (xy -2.2 -3.9)
-          (xy 2.2 -3.9)
-          (xy 2.2 -3.5)
-        )
-        (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User")
-      )
-
-      
-      (fp_rect (start -8 -8) (end 8 8)
-        (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none)
-      )
-
-      
-      (pad "1" smd rect (at -2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 42 "index_top"))
-      (pad "2" smd rect (at 2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 40 "P1.05"))
-      (pad "MP" smd rect (at -6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at -6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at 6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at 6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-  )
-  
-
-
-  (module PG1316S (layer F.Cu) (tedit 67FEEE99)
-
-      (at 174 190 0)
-      (attr smd)
-      
-      (fp_text reference "S9" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-      
-      
-      (fp_line (start -7 -6) (end -7 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -7 7) (end -6 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -6 -7) (end -7 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -7 7) (end -7 6) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 6) (end 7 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 -7) (end 6 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 6 7) (end 7 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 -7) (end 7 -6) (layer F.SilkS) (width 0.15))
-
-       
-      (fp_poly
-        (pts
-          (xy 3.8 -3.5)
-          (xy 3.8 -1.65)
-          (xy 3.3 -1.15)
-          (xy -2.2 -1.15)
-          (xy -2.2 -3.9)
-          (xy 2.2 -3.9)
-          (xy 2.2 -3.5)
-        )
-        (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User")
-      )
-
-      
-      (fp_rect (start -8 -8) (end 8 8)
-        (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none)
-      )
-
-      
-      (pad "1" smd rect (at -2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 44 "inner_home"))
-      (pad "2" smd rect (at 2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 43 "P1.14"))
-      (pad "MP" smd rect (at -6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at -6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at 6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at 6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-  )
-  
-
-
-  (module PG1316S (layer F.Cu) (tedit 67FEEE99)
-
-      (at 174 174 0)
-      (attr smd)
-      
-      (fp_text reference "S10" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
-      
-      
-      (fp_line (start -7 -6) (end -7 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -7 7) (end -6 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -6 -7) (end -7 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start -7 7) (end -7 6) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 6) (end 7 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 -7) (end 6 -7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 6 7) (end 7 7) (layer F.SilkS) (width 0.15))
-      (fp_line (start 7 -7) (end 7 -6) (layer F.SilkS) (width 0.15))
-
-       
-      (fp_poly
-        (pts
-          (xy 3.8 -3.5)
-          (xy 3.8 -1.65)
-          (xy 3.3 -1.15)
-          (xy -2.2 -1.15)
-          (xy -2.2 -3.9)
-          (xy 2.2 -3.9)
-          (xy 2.2 -3.5)
-        )
-        (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User")
-      )
-
-      
-      (fp_rect (start -8 -8) (end 8 8)
-        (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none)
-      )
-
-      
-      (pad "1" smd rect (at -2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 45 "inner_top"))
-      (pad "2" smd rect (at 2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 43 "P1.14"))
-      (pad "MP" smd rect (at -6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at -6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at 6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-      (pad "MP" smd rect (at 6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask"))
-  )
-  
+(footprint "CPG1316S01D02_mikeholscher"
+(at 110 190 0)
+(layer "F.Cu")
+(property "Reference" "S1" hide (at 0 0 0) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))))
+(attr smd)
+(pad "1" smd rect (at -2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45)  (net 32 "pinky_home"))
+(pad "2" smd rect (at 2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45)  (net 31 "P0.02"))
+(pad "3" smd rect (at -6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at -6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at 6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at 6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(fp_circle (center -5.8 2.75) (end -5.3 2.75) (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") )
+(fp_circle (center 5.8 -2.75) (end 6.4 -2.75) (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") )
+(fp_rect (start -8 8) (end 8 -8) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") )
+(fp_rect (start -6.75 -6.5) (end 6.75 6.5) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") )
+(fp_poly (pts (xy 3.8 -3.5) (xy 3.8 -1.65) (xy 3.3 -1.15) (xy -2.2 -1.15) (xy -2.2 -3.9) (xy 2.2 -3.9) (xy 2.2 -3.5)) (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User") )
+(model "${KIPRJMOD}/PG1316S--装配体.STEP" (offset (xyz -4.75 -6.25 -10.25)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+)
+(footprint "CPG1316S01D02_mikeholscher"
+(at 110 174 0)
+(layer "F.Cu")
+(property "Reference" "S2" hide (at 0 0 0) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))))
+(attr smd)
+(pad "1" smd rect (at -2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45)  (net 33 "pinky_top"))
+(pad "2" smd rect (at 2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45)  (net 31 "P0.02"))
+(pad "3" smd rect (at -6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at -6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at 6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at 6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(fp_circle (center -5.8 2.75) (end -5.3 2.75) (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") )
+(fp_circle (center 5.8 -2.75) (end 6.4 -2.75) (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") )
+(fp_rect (start -8 8) (end 8 -8) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") )
+(fp_rect (start -6.75 -6.5) (end 6.75 6.5) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") )
+(fp_poly (pts (xy 3.8 -3.5) (xy 3.8 -1.65) (xy 3.3 -1.15) (xy -2.2 -1.15) (xy -2.2 -3.9) (xy 2.2 -3.9) (xy 2.2 -3.5)) (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User") )
+(model "${KIPRJMOD}/PG1316S--装配体.STEP" (offset (xyz -4.75 -6.25 -10.25)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+)
+(footprint "CPG1316S01D02_mikeholscher"
+(at 126 190 0)
+(layer "F.Cu")
+(property "Reference" "S3" hide (at 0 0 0) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))))
+(attr smd)
+(pad "1" smd rect (at -2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45)  (net 35 "ring_home"))
+(pad "2" smd rect (at 2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45)  (net 34 "P0.15"))
+(pad "3" smd rect (at -6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at -6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at 6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at 6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(fp_circle (center -5.8 2.75) (end -5.3 2.75) (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") )
+(fp_circle (center 5.8 -2.75) (end 6.4 -2.75) (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") )
+(fp_rect (start -8 8) (end 8 -8) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") )
+(fp_rect (start -6.75 -6.5) (end 6.75 6.5) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") )
+(fp_poly (pts (xy 3.8 -3.5) (xy 3.8 -1.65) (xy 3.3 -1.15) (xy -2.2 -1.15) (xy -2.2 -3.9) (xy 2.2 -3.9) (xy 2.2 -3.5)) (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User") )
+(model "${KIPRJMOD}/PG1316S--装配体.STEP" (offset (xyz -4.75 -6.25 -10.25)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+)
+(footprint "CPG1316S01D02_mikeholscher"
+(at 126 174 0)
+(layer "F.Cu")
+(property "Reference" "S4" hide (at 0 0 0) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))))
+(attr smd)
+(pad "1" smd rect (at -2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45)  (net 36 "ring_top"))
+(pad "2" smd rect (at 2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45)  (net 34 "P0.15"))
+(pad "3" smd rect (at -6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at -6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at 6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at 6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(fp_circle (center -5.8 2.75) (end -5.3 2.75) (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") )
+(fp_circle (center 5.8 -2.75) (end 6.4 -2.75) (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") )
+(fp_rect (start -8 8) (end 8 -8) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") )
+(fp_rect (start -6.75 -6.5) (end 6.75 6.5) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") )
+(fp_poly (pts (xy 3.8 -3.5) (xy 3.8 -1.65) (xy 3.3 -1.15) (xy -2.2 -1.15) (xy -2.2 -3.9) (xy 2.2 -3.9) (xy 2.2 -3.5)) (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User") )
+(model "${KIPRJMOD}/PG1316S--装配体.STEP" (offset (xyz -4.75 -6.25 -10.25)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+)
+(footprint "CPG1316S01D02_mikeholscher"
+(at 142 190 0)
+(layer "F.Cu")
+(property "Reference" "S5" hide (at 0 0 0) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))))
+(attr smd)
+(pad "1" smd rect (at -2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45)  (net 38 "middle_home"))
+(pad "2" smd rect (at 2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45)  (net 37 "P1.13"))
+(pad "3" smd rect (at -6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at -6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at 6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at 6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(fp_circle (center -5.8 2.75) (end -5.3 2.75) (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") )
+(fp_circle (center 5.8 -2.75) (end 6.4 -2.75) (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") )
+(fp_rect (start -8 8) (end 8 -8) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") )
+(fp_rect (start -6.75 -6.5) (end 6.75 6.5) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") )
+(fp_poly (pts (xy 3.8 -3.5) (xy 3.8 -1.65) (xy 3.3 -1.15) (xy -2.2 -1.15) (xy -2.2 -3.9) (xy 2.2 -3.9) (xy 2.2 -3.5)) (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User") )
+(model "${KIPRJMOD}/PG1316S--装配体.STEP" (offset (xyz -4.75 -6.25 -10.25)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+)
+(footprint "CPG1316S01D02_mikeholscher"
+(at 142 174 0)
+(layer "F.Cu")
+(property "Reference" "S6" hide (at 0 0 0) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))))
+(attr smd)
+(pad "1" smd rect (at -2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45)  (net 39 "middle_top"))
+(pad "2" smd rect (at 2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45)  (net 37 "P1.13"))
+(pad "3" smd rect (at -6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at -6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at 6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at 6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(fp_circle (center -5.8 2.75) (end -5.3 2.75) (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") )
+(fp_circle (center 5.8 -2.75) (end 6.4 -2.75) (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") )
+(fp_rect (start -8 8) (end 8 -8) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") )
+(fp_rect (start -6.75 -6.5) (end 6.75 6.5) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") )
+(fp_poly (pts (xy 3.8 -3.5) (xy 3.8 -1.65) (xy 3.3 -1.15) (xy -2.2 -1.15) (xy -2.2 -3.9) (xy 2.2 -3.9) (xy 2.2 -3.5)) (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User") )
+(model "${KIPRJMOD}/PG1316S--装配体.STEP" (offset (xyz -4.75 -6.25 -10.25)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+)
+(footprint "CPG1316S01D02_mikeholscher"
+(at 158 190 0)
+(layer "F.Cu")
+(property "Reference" "S7" hide (at 0 0 0) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))))
+(attr smd)
+(pad "1" smd rect (at -2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45)  (net 41 "index_home"))
+(pad "2" smd rect (at 2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45)  (net 40 "P1.05"))
+(pad "3" smd rect (at -6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at -6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at 6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at 6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(fp_circle (center -5.8 2.75) (end -5.3 2.75) (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") )
+(fp_circle (center 5.8 -2.75) (end 6.4 -2.75) (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") )
+(fp_rect (start -8 8) (end 8 -8) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") )
+(fp_rect (start -6.75 -6.5) (end 6.75 6.5) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") )
+(fp_poly (pts (xy 3.8 -3.5) (xy 3.8 -1.65) (xy 3.3 -1.15) (xy -2.2 -1.15) (xy -2.2 -3.9) (xy 2.2 -3.9) (xy 2.2 -3.5)) (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User") )
+(model "${KIPRJMOD}/PG1316S--装配体.STEP" (offset (xyz -4.75 -6.25 -10.25)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+)
+(footprint "CPG1316S01D02_mikeholscher"
+(at 158 174 0)
+(layer "F.Cu")
+(property "Reference" "S8" hide (at 0 0 0) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))))
+(attr smd)
+(pad "1" smd rect (at -2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45)  (net 42 "index_top"))
+(pad "2" smd rect (at 2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45)  (net 40 "P1.05"))
+(pad "3" smd rect (at -6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at -6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at 6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at 6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(fp_circle (center -5.8 2.75) (end -5.3 2.75) (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") )
+(fp_circle (center 5.8 -2.75) (end 6.4 -2.75) (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") )
+(fp_rect (start -8 8) (end 8 -8) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") )
+(fp_rect (start -6.75 -6.5) (end 6.75 6.5) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") )
+(fp_poly (pts (xy 3.8 -3.5) (xy 3.8 -1.65) (xy 3.3 -1.15) (xy -2.2 -1.15) (xy -2.2 -3.9) (xy 2.2 -3.9) (xy 2.2 -3.5)) (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User") )
+(model "${KIPRJMOD}/PG1316S--装配体.STEP" (offset (xyz -4.75 -6.25 -10.25)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+)
+(footprint "CPG1316S01D02_mikeholscher"
+(at 174 190 0)
+(layer "F.Cu")
+(property "Reference" "S9" hide (at 0 0 0) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))))
+(attr smd)
+(pad "1" smd rect (at -2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45)  (net 44 "inner_home"))
+(pad "2" smd rect (at 2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45)  (net 43 "P1.14"))
+(pad "3" smd rect (at -6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at -6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at 6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at 6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(fp_circle (center -5.8 2.75) (end -5.3 2.75) (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") )
+(fp_circle (center 5.8 -2.75) (end 6.4 -2.75) (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") )
+(fp_rect (start -8 8) (end 8 -8) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") )
+(fp_rect (start -6.75 -6.5) (end 6.75 6.5) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") )
+(fp_poly (pts (xy 3.8 -3.5) (xy 3.8 -1.65) (xy 3.3 -1.15) (xy -2.2 -1.15) (xy -2.2 -3.9) (xy 2.2 -3.9) (xy 2.2 -3.5)) (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User") )
+(model "${KIPRJMOD}/PG1316S--装配体.STEP" (offset (xyz -4.75 -6.25 -10.25)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+)
+(footprint "CPG1316S01D02_mikeholscher"
+(at 174 174 0)
+(layer "F.Cu")
+(property "Reference" "S10" hide (at 0 0 0) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))))
+(attr smd)
+(pad "1" smd rect (at -2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45)  (net 45 "inner_top"))
+(pad "2" smd rect (at 2.5 2.65 0) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45)  (net 43 "P1.14"))
+(pad "3" smd rect (at -6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at -6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at 6.35 -6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(pad "3" smd rect (at 6.35 6 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (thermal_bridge_angle 45))
+(fp_circle (center -5.8 2.75) (end -5.3 2.75) (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") )
+(fp_circle (center 5.8 -2.75) (end 6.4 -2.75) (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") )
+(fp_rect (start -8 8) (end 8 -8) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") )
+(fp_rect (start -6.75 -6.5) (end 6.75 6.5) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") )
+(fp_poly (pts (xy 3.8 -3.5) (xy 3.8 -1.65) (xy 3.3 -1.15) (xy -2.2 -1.15) (xy -2.2 -3.9) (xy 2.2 -3.9) (xy 2.2 -3.5)) (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User") )
+(model "${KIPRJMOD}/PG1316S--装配体.STEP" (offset (xyz -4.75 -6.25 -10.25)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+)
 (footprint "D_MMBD4148PLM"
 (at 142 187.5 180)
 (layer F.Cu)
