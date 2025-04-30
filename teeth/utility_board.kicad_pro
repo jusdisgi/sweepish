@@ -339,6 +339,18 @@
       },
       {
         "netclass": "Default",
+        "pattern": "4A1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "4A2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "4C1"
+      },
+      {
+        "netclass": "Default",
         "pattern": "5A1"
       },
       {

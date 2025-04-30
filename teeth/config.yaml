@@ -75,10 +75,50 @@ outlines:
           shift: [0,100]
         - ref: hand_pinky_home
           shift: [100,100]
+
+        - ref: hand_pinky_home
+          shift: [100,57.25]
+        - ref: hand_pinky_home
+          shift: [88,57.25]
+        - ref: hand_pinky_home
+          shift: [88,58.5]
+        - ref: hand_pinky_home
+          shift: [87.5,58.5]
+        - ref: hand_pinky_home
+          shift: [87.5,55.5]
+        - ref: hand_pinky_home
+          shift: [88,55.5]
+        - ref: hand_pinky_home
+          shift: [88,56.75]
+        - ref: hand_pinky_home
+          shift: [100,56.75]
+
+        - ref: hand_pinky_home
+          shift: [100,49.25]
+        - ref: hand_pinky_home
+          shift: [88,49.25]
+        - ref: hand_pinky_home
+          shift: [88,50.5]
+        - ref: hand_pinky_home
+          shift: [87.5,50.5]
+        - ref: hand_pinky_home
+          shift: [87.5,47.5]
+        - ref: hand_pinky_home
+          shift: [88,47.5]
+        - ref: hand_pinky_home
+          shift: [88,48.75]
+        - ref: hand_pinky_home
+          shift: [100,48.75]
+
+
         - ref: hand_pinky_home
           shift: [100,30.25]
         - ref: hand_pinky_home
-          shift: [85,30.25]
+          shift: [85.5,30.25]
+        - ref: hand_pinky_home
+          shift: [85.5,32.5]
+        - ref: hand_pinky_home
+          shift: [85,32.5]
         - ref: hand_pinky_home
           shift: [85,27.5]
         - ref: hand_pinky_home
@@ -164,6 +204,14 @@ outlines:
         - ref: hand_pinky_home
           shift: [95.2,65.5]
         - ref: hand_pinky_home
+          shift: [88,65.5]
+        - ref: hand_pinky_home
+          shift: [88,63.5]
+        - ref: hand_pinky_home
+          shift: [87.5,63.5]
+        - ref: hand_pinky_home
+          shift: [87.5,65.5]
+        - ref: hand_pinky_home
           shift: [39.8,65.5]
   slot_4:
     - what: polygon
@@ -184,9 +232,27 @@ outlines:
         - ref: hand_pinky_home
           shift: [69.8,40]
         - ref: hand_pinky_home
+          shift: [85,40]
+        - ref: hand_pinky_home
+          shift: [85,37.5]
+        - ref: hand_pinky_home
+          shift: [85.5,37.5]
+        - ref: hand_pinky_home
+          shift: [85.5,40]
+        - ref: hand_pinky_home
           shift: [95.2,40]
         - ref: hand_pinky_home
           shift: [95.2,40.5]
+
+        - ref: hand_pinky_home
+          shift: [88,40.5]
+        - ref: hand_pinky_home
+          shift: [88,42.5]
+        - ref: hand_pinky_home
+          shift: [87.5,42.5]
+        - ref: hand_pinky_home
+          shift: [87.5,40.5]
+
         - ref: hand_pinky_home
           shift: [69.8,40.5]
 pcbs:
@@ -275,6 +341,30 @@ pcbs:
           ref: hand_pinky_home
           shift: [97.6,65.9]
           rotate: 90
+      bites_13:
+        what: mousebites_25mm
+        where:
+          ref: hand_pinky_home
+          shift: [85.3,35]
+          rotate: 0
+      bites_14:
+        what: mousebites_25mm
+        where:
+          ref: hand_pinky_home
+          shift: [87.8,53]
+          rotate: 0
+      bites_15:
+        what: mousebites_25mm
+        where:
+          ref: hand_pinky_home
+          shift: [87.8,61]
+          rotate: 0
+      bites_16:
+        what: mousebites_25mm
+        where:
+          ref: hand_pinky_home
+          shift: [87.8,45]
+          rotate: 0
       5diode_1:
         what: diode_smd_mmbd4148plm
         where: hand_pinky_home
@@ -356,26 +446,87 @@ pcbs:
           P4: "3A4"
           P5: "3A5"
           P6: "3C1"
-      # bav70_tom_4:
-      #   what: diode_bav70_tomzail
-      #   where: hand_pinky_home
-      #   adjust:
-      #     shift: [93,35]
-      #     rotate: 90
-      #   params:
-      #     A1: "4A1"
-      #     A2: "4A2"
-      #     C: "4C1"
+      bav70_tom_4:
+        what: diode_bav70_tomzail
+        where: hand_pinky_home
+        adjust:
+          shift: [94,45]
+          rotate: -90
+        params:
+          A1: "4A1"
+          A2: "4A2"
+          C: "4C1"
+      bav70_breakout_tom_4:
+        what: bav70_breakout_holes
+        where: hand_pinky_home
+        adjust: 
+          shift: [94,45]
+          rotate: 90
+        params:
+          P1: "4A1"
+          P2: "4A2"
+          P3: "4C1"
       bav70_hand_5:
         what: diode_bav70_hand
         where: hand_pinky_home
         adjust:
           shift: [93,35]
-          rotate: 90
+          rotate: -90
         params:
           from1: "5A1"
           from2: "5A2"
           to: "5C1"
+      bav70_breakout_hand_5:
+        what: bav70_breakout_holes
+        where: hand_pinky_home
+        adjust: 
+          shift: [93,35]
+          rotate: 90
+        params:
+          P1: "5A1"
+          P2: "5A2"
+          P3: "5C1"
+      bav70_tom_6:
+        what: diode_bav70_tomzail
+        where: hand_pinky_home
+        adjust:
+          shift: [94,53]
+          rotate: -90
+        params:
+          A1: "6A1"
+          A2: "6A2"
+          C: "6C1"
+      bav70_breakout_tom_6:
+        what: bav70_breakout_holes
+        where: hand_pinky_home
+        adjust: 
+          shift: [94,53]
+          rotate: 90
+        params:
+          P1: "6A1"
+          P2: "6A2"
+          P3: "6C1"
+      bav70_hand_7:
+        what: diode_bav70_hand
+        where: hand_pinky_home
+        adjust:
+          shift: [94,61]
+          rotate: -90
+        params:
+          from1: "7A1"
+          from2: "7A2"
+          to: "7C1"
+      bav70_breakout_hand_7:
+        what: bav70_breakout_holes
+        where: hand_pinky_home
+        adjust: 
+          shift: [94,61]
+          rotate: 90
+        params:
+          P1: "7A1"
+          P2: "7A2"
+          P3: "7C1"
+
       pg1316s:
         what: switch_pg1316s
         where: true

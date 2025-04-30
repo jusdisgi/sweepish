@@ -2,6 +2,7 @@
 // See https://services.taiwansemi.com/storage/resources/datasheet/BAW56%20SERIES_I2001.pdf
 module.exports = {
     params: {
+        designator: "D",
         side: "F",
         reversible: false,
         silkscreen: true,
@@ -80,7 +81,7 @@ module.exports = {
         const d = p.pad_width / 2 + 0.25;
 
         return `
-            (footprint "BAV70 SOT23" (version 20211014) (generator pcbnew)
+            (footprint "BAV70 SOT23" (generator pcbnew)
                 (layer "${p.side}.Cu")
                 ${p.at}
                 (property "Reference" "${p.ref}"
