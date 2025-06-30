@@ -33268,7 +33268,7 @@
 			(justify right)
 		)
 	)
-	(gr_text "SS109"
+	(gr_text "SS309"
 		(at 175.26 162.23 0)
 		(layer "F.SilkS")
 		(uuid "bc724165-383e-4d0e-9630-35e1307c0e3c")

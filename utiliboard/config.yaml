@@ -1,0 +1,622 @@
+units:
+  # Utility/practice PCB mk.1
+  # @huntercook https://github.com/jusdisgi
+  #
+  # Please note this is not a keyboard!
+  #
+
+
+  # Spacing Variables
+  # PG1316S keycaps are smaller than chocs
+  # These dimensions come from: https://docs.holykeebs.com/datasheets/PG1316_1U.pdf
+  pgx: 18
+  pgy: 17
+  # Padding Variables
+  pcx: cx+2
+  pcy: cy+2
+  pu : u+2
+  pU: U+2
+  ppgx: pgx + 2
+  ppgy: pgy + 2
+  $default_height: 16
+  $default_width: 16
+points:
+  zones:
+    finger:
+      anchor.shift: [100,-200]
+      key:
+        padding: 1pgy
+        spread: 1pgx
+      columns:
+        pinky:
+          key:
+            column_net: C0
+        ring:
+          key:
+            column_net: C1
+        middle:
+          key:
+            column_net: C2
+        index:
+          key:
+            column_net: C3
+        inner:
+          key:
+            column_net: C4
+      rows:
+        home:
+          row_net: R0
+
+
+# Helper points
+
+    mp1:
+      anchor:
+        - ref: finger_pinky_home
+          shift: [3,3]
+    mp2:
+      anchor:
+        - ref: finger_pinky_home
+          shift: [3,97]
+    mp3:
+      anchor:
+        - ref: finger_pinky_home
+          shift: [97,3]
+    mp4:
+      anchor:
+        - ref: finger_pinky_home
+          shift: [97,97]
+    bites1:
+      anchor:
+        - ref: finger_pinky_home
+          shift: [20,60]
+          rotate: 90
+    bites2:
+      anchor:
+        - ref: finger_pinky_home
+          shift: [50,60]
+          rotate: 90
+    bites3:
+      anchor:
+        - ref: finger_pinky_home
+          shift: [80,60]
+          rotate: 90
+    bites4:
+      anchor:
+        - ref: finger_pinky_home
+          shift: [20,45]
+          rotate: 90
+    bites5:
+      anchor:
+        - ref: finger_pinky_home
+          shift: [50,45]
+          rotate: 90
+    bites6:
+      anchor:
+        - ref: finger_pinky_home
+          shift: [80,45]
+          rotate: 90
+
+
+outlines:
+  square:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: finger_pinky_home
+          shift: [0,0]
+        - ref: finger_pinky_home
+          shift: [0,100]
+        - ref: finger_pinky_home
+          shift: [100,100]
+        - ref: finger_pinky_home
+          shift: [100,0]
+      fillet: 3
+  nano_slot:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: finger_pinky_home
+          shift: [23.5,100]
+        - ref: finger_pinky_home
+          shift: [23.5,67]
+        - ref: finger_pinky_home
+          shift: [36.5,67]
+        - ref: finger_pinky_home
+          shift: [36.5,100]
+      fillet: 0.5
+  board:
+    - name: square
+    - operation: subtract
+      name: nano_slot
+
+
+pcbs:
+  utility_board:
+    template: kicad8
+    outlines:
+      main:
+        outline: board
+    footprints:
+      mounts:
+        what: mounting_hole_npth
+        where: /^mp/
+      mousebites:
+        what: mousebites_25mm
+        where: /^bites/      
+      # magsafe:
+      #   what: magsafe_silkscreen
+      #   where: finger_pinky_home
+      #   adjust: 
+      #     shift: [50,50]
+      #     rotate: 0
+      #   params.side: 'B'
+      
+
+
+# Top section of board, gamepad or somesuch
+      ano:
+        what: rotary_encoder_ano
+        where: finger_pinky_home
+        adjust: 
+          shift: [80,80]
+          rotate: 45
+        params:
+          A: "ANO_B"
+          B: "ANO_B"
+          COM_A: "GND"
+          COM_B: "GND"
+          S1: "ANO_CTR"
+          S2: "ANO_DN"
+          S3: "ANO_RT"
+          S4: "ANO_UP"
+          S5: "ANO_LT"
+      fiveway:
+        what: switch_5way_skrh
+        where: finger_pinky_home
+        adjust: 
+          shift: [10,80]
+          rotate: 0
+        params:
+          P1: '5_LT'
+          P2: '5_CTR'
+          P3: '5_DN'
+          P4: '5_UP'
+          P5: 'GND'
+          P6: '5_RT'
+
+          
+      lcd_soundsystem:
+        what: conn_molex_picoblade_smd_1x08_1mm25_horiz
+        where: finger_pinky_home
+        adjust: 
+          shift: [50,97]
+          rotate: 180
+        params:
+          P1: 3V3
+          P2: GND
+          P3: LCD_DIN
+          P4: LCD_CLK
+          P5: LCD_CS
+          P6: LCD_DC
+          P7: LCD_RST
+          P8: LCD_BL
+
+
+      nano:
+        what: mcu_nice_nano_smd
+        where:
+          ref: finger_pinky_home
+          shift: [30,83.5]
+          rotate: 0
+        params:
+          reverse_mount: true
+          P1: ''
+          P1_label: D1
+          P0: ''
+          P0_label: D0
+          P2: 'LCD_CS'
+          P3: 'LCD_RST'
+          P4: 'LCD_DIN' # Needs High Freq
+          P5: 'LCD_CLK' # Needs High Freq
+          P6: 'LCD_DC'  
+          P7: 'LCD_BL'
+          P8: ANO_CTR   
+          P9: ANO_DN
+          P10: ANO_RT
+          P16: ANO_UP
+          P14: ANO_LT
+          P15: 5_LT
+          P18: 5_CTR
+          P19: 5_DN
+          P20: 5_UP
+          P21: 5_RT
+          VCC: 3V3
+          VCC_label: 3V3
+          mcu_3dmodel_filename: '\${INFUSED_KIM_MODELS}/Nice_Nano_V2.step'
+          mcu_3dmodel_xyz_rotation: [0, 0, 0]
+          mcu_3dmodel_xyz_offset: [0, 0, 0]
+
+
+
+
+
+
+
+# Mid section of board, diode breakouts for soldering testing
+      5diode:
+        what: diode_smd_mmbd4148plm
+        where: finger_pinky_home
+        adjust:
+          shift: [8,52.5]
+          rotate: 0
+        params:
+          A1: "1A1"
+          A2: "1A2"
+          A3: "1A3"
+          A4: "1A4"
+          A5: "1A5"
+          C: "1C1"
+          side: F
+      5diode_breakout:
+        what: breakout_holes_6
+        where: finger_pinky_home
+        adjust:
+          shift: [8,52.5]
+          rotate: 0
+        params:
+          P1: "1A1"
+          P2: "1A2"
+          P3: "1A3"
+          P4: "1A4"
+          P5: "1C1"
+          P6: "1A5"
+
+      1ss309:
+        what: diode_smd_1ss309
+        where: finger_pinky_home
+        adjust:
+          shift: [20,52.5]
+          rotate: -90
+        params:
+          A1: "2A1"
+          A2: "2A2"
+          A3: "2A3"
+          A4: "2A4"
+          C: "2C1"
+      4_breakout:
+        what: breakout_holes_5
+        where: finger_pinky_home
+        adjust:
+          shift: [20,52.5]
+          rotate: 0
+        params:
+          P1: "2A2"
+          P3: "2A1"
+          P4: "2A3"
+          P5: "2A4"
+          P2: "2C1"
+
+      sot323:
+        what: pkg_smd_sot323
+        where: finger_pinky_home
+        adjust:
+          shift: [30,52.5]
+          rotate: -90
+        params:
+          P1: "3P1"
+          P2: "3P2"
+          P3: "3P3"
+      sot323_br:
+        what: breakout_holes_3
+        where: finger_pinky_home
+        adjust: 
+          shift: [30,52.5]
+          rotate: 0
+        params:
+          P1: "3P1"
+          P2: "3P2"
+          P3: "3P3"
+
+      bav70_tom:
+        what: diode_smd_bav70_larssont
+        where: finger_pinky_home
+        adjust:
+          shift: [40,52.5]
+          rotate: 0
+        params:
+          A1: "4A1"
+          A2: "4A2"
+          C: "4C1"
+      bav70_breakout_tom:
+        what: breakout_holes_3
+        where: finger_pinky_home
+        adjust: 
+          shift: [40,52.5]
+          rotate: 180
+        params:
+          P1: "4A1"
+          P2: "4A2"
+          P3: "4C1"
+
+      bav70_hand:
+        what: diode_smd_bav70_hand
+        where: finger_pinky_home
+        adjust:
+          shift: [50,52.5]
+          rotate: 0
+        params:
+          A1: "5A1"
+          A2: "5A2"
+          C: "5C1"
+      bav70_breakout_hand:
+        what: breakout_holes_3
+        where: finger_pinky_home
+        adjust: 
+          shift: [50,52.5]
+          rotate: 180
+        params:
+          P1: "5A1"
+          P2: "5A2"
+          P3: "5C1"
+
+      sot363:
+        what: pkg_smd_sot363
+        where: finger_pinky_home
+        adjust:
+          shift: [60,52.5]
+          rotate: -90
+        params:
+          P1: "6P1"
+          P2: "6P2"
+          P3: "6P3"
+          P4: "6P4"
+          P5: "6P5"
+          P6: "6P6"
+      sot363_br:
+        what: breakout_holes_6
+        where: finger_pinky_home
+        adjust:
+          shift: [60,52.5]
+          rotate: 0
+        params:
+          P1: "6P3"
+          P2: "6P2"
+          P3: "6P1"
+          P4: "6P4"
+          P5: "6P5"
+          P6: "6P6"
+      sod323:
+        what: diode_smd_sod323f
+        where: finger_pinky_home
+        adjust: 
+          shift: [70,52.5]
+          rotate: 90
+        params:
+          from: "7P1"
+          to: "7P2"
+      sod323_br:
+        what: breakout_holes_2
+        where: finger_pinky_home
+        adjust: 
+          shift: [70,52.5]
+          rotate: 0
+        params:
+          P1: "7P1"
+          P2: "7P2"
+
+      sod123:
+        what: diode_tht_sod123
+        where: finger_pinky_home
+        adjust: 
+          shift: [80,52.5]
+          rotate: 90
+        params:
+          from: ''
+          to: ''
+          side: 'F'
+      plate1:
+        what: mounting_hole_plated
+        where: finger_pinky_home
+        adjust: 
+          shift: [80,48.5]
+          rotate: 0
+        params:
+          outline: 0.2
+          drill: 1
+          include_courtyard: false
+      plate2:
+        what: mounting_hole_plated
+        where: finger_pinky_home
+        adjust: 
+          shift: [80,56.5]
+          rotate: 0
+        params:
+          outline: 0.2
+          drill: 1
+          include_courtyard: false
+
+
+# Bottom section of board, keyrow with rollers
+
+      battcon:
+        what: conn_molex_pico_ezmate_plus_1x02
+        where: finger_pinky_home
+        adjust: 
+          shift: [55,38]
+          rotate: 0
+        params:
+          P2: RAW
+
+      ckw12:
+        what: roller_encoder_ckw12
+        where: finger_pinky_home
+        adjust: 
+          shift: [32,32]
+          rotate: -90
+        params:
+          S1: "C0"
+          S2: "ckw12_to"
+          A: "ckw12_a"
+          B: "GND"
+          C: "ckw12_b"
+      scroll:
+        what: scrollwheel
+        where: finger_pinky_home
+        adjust: 
+          shift: [68,32]
+          rotate: 180
+        params:
+          from: 'C1'
+          to: 'scroll_to'
+          A: 'scroll_a'
+          B: 'GND'
+          C: 'scroll_b'
+      bav70_roll_tom:
+        what: diode_smd_bav70_larssont
+        where: finger_pinky_home
+        adjust:
+          shift: [45,24]
+          rotate: 180
+        params:
+          A1: "ckw12_to"
+          A2: "scroll_to"
+          C: "R1"
+    
+      
+
+      pg1316s_og:
+        what: switch_pg1316s
+        where: finger_pinky_home
+        adjust:
+            shift: [14,10]
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          large_p1: false
+          square_p1: false
+          square_p2: false
+          shift_p2: false
+          mp_gnd: false
+      pg1316s_mike:
+        what: switch_pg1316s
+        where: finger_ring_home
+        adjust:
+            shift: [14,10]
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          large_p1: true
+          square_p1: false
+          square_p2: true
+          shift_p2: false
+          mp_gnd: true
+      pg1316s_hunter:
+        what: switch_pg1316s
+        where: finger_middle_home
+        adjust:
+            shift: [14,10]
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          large_p1: false
+          square_p1: true
+          square_p2: true
+          shift_p2: false
+          mp_gnd: true
+      pg1316s_shift:
+        what: switch_pg1316s
+        where: finger_index_home
+        adjust:
+            shift: [14,10]
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          large_p1: false
+          square_p1: false
+          square_p2: false
+          shift_p2: true
+          mp_gnd: true
+      pg1316s_hunter2:
+        what: switch_pg1316s
+        where: finger_inner_home
+        adjust:
+            shift: [14,10]
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          large_p1: false
+          square_p1: true
+          square_p2: true
+          shift_p2: false
+          mp_gnd: true
+
+
+      diode_pg:
+        what: diode_smd_mmbd4148plm
+        where: finger_middle_home
+        adjust:
+          shift: [16.5, 12.3]
+          rotate: 180
+        params:
+          A1: "index_{{row}}"
+          A2: "{{colrow}}"
+          A3: "ring_{{row}}"
+          A4: "inner_{{row}}"
+          A5: "pinky_{{row}}"
+          C: "{{row_net}}"
+          side: F
+      led:
+        what: led_ws2812b_2020
+        where: /^finger/
+        adjust:
+          shift: [13.5, 12.5]
+          rotate: 180        
+        params:
+          P1: "" #DOUT
+          P2: GND
+          P3: "" #DIN
+          P4: 5V
+
+
+      xiao:
+        what: mcu_xiao_plus_smd
+        where:
+          ref: finger_pinky_home
+          shift: [10.6,32]
+          rotate: 90
+        params:
+          side: F
+          P5: 'scroll_b'
+          P6: 'C1'
+          P7: 'R0'
+          P8: 'R1'
+          P9: 'C3'
+          P10: 'ckw_a'
+          P18: 'scroll_a'
+          P19: 'C0'
+          P21: 'C2'
+          P22: 'C4'
+          P23: 'ckw_b'
+          P28: 'RAW'
+
+      holeyxiao:
+        what: mcu_xiao_plus_smd_cutouts
+        where:
+          ref: finger_pinky_home
+          shift: [89.4,32]
+          rotate: -90
+        params:
+          side: F
+          P5: 'scroll_b'
+          P6: 'C1'
+          P7: 'R0'
+          P8: 'R1'
+          P9: 'C3'
+          P10: 'ckw_a'
+          P18: 'scroll_a'
+          P19: 'C0'
+          P21: 'C2'
+          P22: 'C4'
+          P23: 'ckw_b'
+          P28: 'RAW'
